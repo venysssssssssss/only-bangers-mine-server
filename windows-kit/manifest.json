@@ -1,0 +1,2635 @@
+{
+  "author": "TeamAOF",
+  "files": [
+    {
+      "fileID": 5676012,
+      "projectID": 790626,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5676/12/modernfix-fabric-5.19.4%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 4637798,
+      "projectID": 560091,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4637/798/totw_additions-1.3.0-1.20.x-fabric.jar"
+    },
+    {
+      "fileID": 4738953,
+      "projectID": 361579,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4738/953/spark-1.10.53-fabric.jar"
+    },
+    {
+      "fileID": 5018841,
+      "projectID": 463113,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5018/841/arrp-0.8.1.jar"
+    },
+    {
+      "fileID": 5021524,
+      "projectID": 576449,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5021/524/coxinhautilities-1.4.13%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5416165,
+      "projectID": 689467,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5416/165/packetfixer-fabric-1.4.2-1.19-to-1.20.1.jar"
+    },
+    {
+      "fileID": 4993305,
+      "projectID": 438365,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4993/305/BOMD-1.7.5-1.20.1.jar"
+    },
+    {
+      "fileID": 5109352,
+      "projectID": 320778,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5109/352/glassential-fabric-2.0.1.jar"
+    },
+    {
+      "fileID": 5113229,
+      "projectID": 514468,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5113/229/The_Graveyard_3.1_(FABRIC)_for_1.20.1.jar"
+    },
+    {
+      "fileID": 5547512,
+      "projectID": 306549,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5547/512/Tips-Fabric-1.20.1-12.1.8.jar"
+    },
+    {
+      "fileID": 5424363,
+      "projectID": 312353,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5424/363/artifacts-fabric-9.5.12.jar"
+    },
+    {
+      "fileID": 4692219,
+      "projectID": 450646,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4692/219/strange-berries-2.3.2-1.20.x.jar"
+    },
+    {
+      "fileID": 4606911,
+      "projectID": 394535,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4606/911/trashcans-1.0.18-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 5057449,
+      "projectID": 377051,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5057/449/BedBenefits-Fabric-1.20.1-13.0.3.jar"
+    },
+    {
+      "fileID": 5576528,
+      "projectID": 620928,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5576/528/zenith-1.2.3-1.20.1.jar"
+    },
+    {
+      "fileID": 4573177,
+      "projectID": 325492,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4573/177/light-overlay-8.0.0.jar"
+    },
+    {
+      "fileID": 4996993,
+      "projectID": 809542,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4996/993/VillagersPlus_3.1_(FABRIC)_for_1.20.1.jar"
+    },
+    {
+      "fileID": 5293979,
+      "projectID": 739872,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5293/979/createdeco-2.0.2-1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 5400096,
+      "projectID": 951221,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5400/96/letsdo-herbalbrews-fabric-1.0.8.1.jar"
+    },
+    {
+      "fileID": 5176066,
+      "projectID": 823331,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5176/66/calibrated-1.3.1-beta.11.20.jar"
+    },
+    {
+      "fileID": 4750271,
+      "projectID": 904097,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4750/271/mighty_mail-fabric-1.20.1-1.0.14.jar"
+    },
+    {
+      "fileID": 5567590,
+      "projectID": 438495,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5567/590/ftb-library-fabric-2001.2.4.jar"
+    },
+    {
+      "fileID": 4828147,
+      "projectID": 632624,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4828/147/HopoBetterRuinedPortals-[1.20-1.20.2]-1.3.7.jar"
+    },
+    {
+      "fileID": 5604169,
+      "projectID": 633483,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5604/169/Powah-5.0.7.jar"
+    },
+    {
+      "fileID": 5513046,
+      "projectID": 1014057,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5513/46/mythiclib-1.1.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5368403,
+      "projectID": 862201,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5368/403/DistractingTrims-Fabric-1.20.1-2.0.4.jar"
+    },
+    {
+      "fileID": 5273025,
+      "projectID": 395620,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5273/25/itemcollectors-1.1.10-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 4921333,
+      "projectID": 517791,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4921/333/Display%20Case-fabric-1.20-1.0.8.jar"
+    },
+    {
+      "fileID": 4766089,
+      "projectID": 667377,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4766/89/catalogue-fabric-1.20.1-1.8.0.jar"
+    },
+    {
+      "fileID": 4627023,
+      "projectID": 544671,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4627/23/portabletables-fabric-1.20.1-2.4.jar"
+    },
+    {
+      "fileID": 5568299,
+      "projectID": 257814,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5568/299/CreativeCore_FABRIC_v2.11.33_mc1.20.1.jar"
+    },
+    {
+      "fileID": 4603805,
+      "projectID": 496913,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4603/805/twigs-3.1.0-fabric.jar"
+    },
+    {
+      "fileID": 4656204,
+      "projectID": 891257,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4656/204/Aquamirae%206.jar"
+    },
+    {
+      "fileID": 5281259,
+      "projectID": 628972,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5281/259/farmersknives-3.2.jar"
+    },
+    {
+      "fileID": 5294268,
+      "projectID": 510656,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5294/268/wirelesschargers-1.0.9a-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 5623638,
+      "projectID": 502516,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5623/638/craftingtweaks-fabric-1.20.1-18.2.5.jar"
+    },
+    {
+      "fileID": 4770825,
+      "projectID": 248787,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4770/825/appleskin-fabric-mc1.20.1-2.5.1.jar"
+    },
+    {
+      "fileID": 5454121,
+      "projectID": 656526,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5454/121/revelationary-1.3.8%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5647780,
+      "projectID": 835687,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5647/780/betterarcheology-1.2.0-1.20.1.jar"
+    },
+    {
+      "fileID": 4743117,
+      "projectID": 585548,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4743/117/BHMenu-Fabric-1.20.1-2.4.1.jar"
+    },
+    {
+      "fileID": 5446151,
+      "projectID": 775518,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5446/151/runes-0.9.13%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5593244,
+      "projectID": 968398,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5593/244/copycats-2.1.2%2bmc.1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 5127308,
+      "projectID": 377313,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5127/308/TrampleNoMore-Fabric-1.20.1-13.0.3.jar"
+    },
+    {
+      "fileID": 4594971,
+      "projectID": 373774,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4594/971/rare-ice-0.6.0.jar"
+    },
+    {
+      "fileID": 5514012,
+      "projectID": 932359,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5514/12/archers-1.2.5%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5607996,
+      "projectID": 714958,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5607/996/Ad-Astra-Giselle-Addon-fabric-1.20.1-6.14.jar"
+    },
+    {
+      "fileID": 5076276,
+      "projectID": 510648,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5076/276/fabric-3.1.4%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5589335,
+      "projectID": 363569,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5589/335/mcw-windows-2.3.0-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 4738149,
+      "projectID": 908730,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4738/149/triqueapi-mc1.20.1-1.1.0.jar"
+    },
+    {
+      "fileID": 4643086,
+      "projectID": 311120,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4643/86/Couplings-1.9.4+1.20.jar"
+    },
+    {
+      "fileID": 5209706,
+      "projectID": 967867,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5209/706/letsdo-addon-structures-1.7.1.jar"
+    },
+    {
+      "fileID": 5193816,
+      "projectID": 901350,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5193/816/YungsBetterEndIsland-1.20-Fabric-2.0.6.jar"
+    },
+    {
+      "fileID": 4708961,
+      "projectID": 237903,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4708/961/RebornCore-5.8.7.jar"
+    },
+    {
+      "fileID": 5368366,
+      "projectID": 690176,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5368/366/BoneZone-Fabric-1.20.1-3.0.6.jar"
+    },
+    {
+      "fileID": 4803994,
+      "projectID": 370890,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4803/994/JAVD-Fabric-5.0.1+mc1.20.1.jar"
+    },
+    {
+      "fileID": 5639247,
+      "projectID": 615106,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5639/247/lootr-fabric-1.20-0.7.34.84.jar"
+    },
+    {
+      "fileID": 4983906,
+      "projectID": 511812,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4983/906/DungeonsArise-1.20.x-2.1.58-fabric-release.jar"
+    },
+    {
+      "fileID": 5562363,
+      "projectID": 405388,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5562/363/Modern-Industrialization-1.8.6.jar"
+    },
+    {
+      "fileID": 4742681,
+      "projectID": 738663,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4742/681/nerb-1.20.1-0.3-FABRIC.jar"
+    },
+    {
+      "fileID": 5120049,
+      "projectID": 976768,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5120/49/TheOrcs-fabric-1.20.x-1.0.jar"
+    },
+    {
+      "fileID": 4720195,
+      "projectID": 379232,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4720/195/tesseract-1.0.35a-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 5467339,
+      "projectID": 807512,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5467/339/brewinandchewin-3.0.6%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4769490,
+      "projectID": 631403,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/490/YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar"
+    },
+    {
+      "fileID": 5655835,
+      "projectID": 416294,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5655/835/rhino-fabric-2001.2.3-build.6.jar"
+    },
+    {
+      "fileID": 4608276,
+      "projectID": 827727,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4608/276/MoreStructures-SpacingTweaks-1.20.1-2.1.56.zip"
+    },
+    {
+      "fileID": 4997461,
+      "projectID": 415438,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4997/461/Croptopia-1.20.1-FABRIC-3.0.4.jar"
+    },
+    {
+      "fileID": 5485649,
+      "projectID": 455508,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5485/649/iris-1.7.2%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5285006,
+      "projectID": 848032,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5285/6/transmog-fabric-1.3.0%2b1.20.jar"
+    },
+    {
+      "fileID": 5621040,
+      "projectID": 225738,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5621/40/dummmmmmy-1.20-1.8.20-fabric.jar"
+    },
+    {
+      "fileID": 5300866,
+      "projectID": 1010815,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5300/866/kibecompat-0.0.1.jar"
+    },
+    {
+      "fileID": 5352742,
+      "projectID": 400933,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5352/742/mcw-trapdoors-1.1.3-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 5641692,
+      "projectID": 959439,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5641/692/create-food-1.20.1-1.1.1-fabric.jar"
+    },
+    {
+      "fileID": 5475732,
+      "projectID": 932715,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5475/732/Quad-1.3.0-beta.3%2b1.20.4-Fabric.jar"
+    },
+    {
+      "fileID": 4973440,
+      "projectID": 348521,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4973/440/cloth-config-11.1.118-fabric.jar"
+    },
+    {
+      "fileID": 5496452,
+      "projectID": 904471,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5496/452/immersive_melodies-0.3.0%2b1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 4594926,
+      "projectID": 386892,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4594/926/iron-jetpacks-0.4.7.jar"
+    },
+    {
+      "fileID": 4676755,
+      "projectID": 875744,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4676/755/BetterSmithingTable-1.1.0-Fabric-1.20.jar"
+    },
+    {
+      "fileID": 5533043,
+      "projectID": 901711,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5533/43/respite-creators-1.3.0.jar"
+    },
+    {
+      "fileID": 5254377,
+      "projectID": 391708,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5254/377/indrev-1.16.7-BETA.jar"
+    },
+    {
+      "fileID": 5639522,
+      "projectID": 659887,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5639/522/simplyswords-1.56.0-1.20.1.jar"
+    },
+    {
+      "fileID": 5641583,
+      "projectID": 821752,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5641/583/bettertrims-2.3.2.jar"
+    },
+    {
+      "fileID": 4652648,
+      "projectID": 314579,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4652/648/crawl-0.12.0.jar"
+    },
+    {
+      "fileID": 5270040,
+      "projectID": 456956,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5270/40/Chipped-fabric-1.20.1-3.0.6.jar"
+    },
+    {
+      "fileID": 5588775,
+      "projectID": 695107,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5588/775/moremobvariants-fabric%2b1.20.1-1.3.1.jar"
+    },
+    {
+      "fileID": 5675212,
+      "projectID": 388172,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5675/212/geckolib-fabric-1.20.1-4.4.9.jar"
+    },
+    {
+      "fileID": 5454838,
+      "projectID": 238086,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5454/838/kubejs-fabric-2001.6.5-build.14.jar"
+    },
+    {
+      "fileID": 5272903,
+      "projectID": 394140,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5272/903/simplemagnets-1.1.11-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 5503724,
+      "projectID": 853197,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5503/724/fakerlib-0.1.4.jar"
+    },
+    {
+      "fileID": 5340133,
+      "projectID": 638535,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5340/133/Dungeon%20Now%20Loading-fabric-1.20.1-1.5.jar"
+    },
+    {
+      "fileID": 5368434,
+      "projectID": 255105,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5368/434/FriendlyFire-Fabric-1.20.1-18.0.7.jar"
+    },
+    {
+      "fileID": 5467443,
+      "projectID": 930072,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5467/443/letsdo-nethervinery-fabric-1.2.14.jar"
+    },
+    {
+      "fileID": 4793377,
+      "projectID": 333946,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4793/377/mooblooms-1.6.2.jar"
+    },
+    {
+      "fileID": 4703393,
+      "projectID": 855017,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4703/393/clean_tooltips-1.0-fabric-1.20.1.jar"
+    },
+    {
+      "fileID": 5137936,
+      "projectID": 419699,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5137/936/architectury-9.2.14-fabric.jar"
+    },
+    {
+      "fileID": 5672344,
+      "projectID": 910706,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5672/344/Jewelry-1.3.7%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4753164,
+      "projectID": 547689,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4753/164/trashslot-fabric-1.20-15.1.0.jar"
+    },
+    {
+      "fileID": 5605431,
+      "projectID": 416089,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5605/431/voicechat-fabric-1.20.1-2.5.20.jar"
+    },
+    {
+      "fileID": 5213810,
+      "projectID": 542196,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5213/810/besmirchment-1.20.1-4.jar"
+    },
+    {
+      "fileID": 4949797,
+      "projectID": 885449,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4949/797/EpheroLib-1.20.1-FABRIC-1.2.0.jar"
+    },
+    {
+      "fileID": 5684645,
+      "projectID": 993166,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5684/645/FarmersDelight-1.20.1-2.1.6%2brefabricated.jar"
+    },
+    {
+      "fileID": 4789317,
+      "projectID": 909375,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4789/317/wits-1.1.0+1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 4561361,
+      "projectID": 486778,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4561/361/fabric-experiencebugfix-1.20-2.jar"
+    },
+    {
+      "fileID": 4798165,
+      "projectID": 628469,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4798/165/ctov-farmers-delight-add-on-v2-1a.zip"
+    },
+    {
+      "fileID": 5477569,
+      "projectID": 822688,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5477/569/BetterThanLlamas-1.20.1-Fabric-1.3.0.jar"
+    },
+    {
+      "fileID": 4760048,
+      "projectID": 552758,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4760/48/Modern-Dynamics-0.7.0-beta.jar"
+    },
+    {
+      "fileID": 4586848,
+      "projectID": 478559,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4586/848/Measurements-fabric-1.20.1-2.0.0.jar"
+    },
+    {
+      "fileID": 5641790,
+      "projectID": 870275,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5641/790/trimeffects-fabric-1.20.X-1.3.5.jar"
+    },
+    {
+      "fileID": 5486071,
+      "projectID": 704113,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5486/71/botarium-fabric-1.20.1-2.3.4.jar"
+    },
+    {
+      "fileID": 5562700,
+      "projectID": 734325,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5562/700/wizards-1.3.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5623697,
+      "projectID": 704465,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5623/697/letsdo-vinery-fabric-1.4.28.jar"
+    },
+    {
+      "fileID": 4704156,
+      "projectID": 460652,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4704/156/sihywtcamd-1.7.5+1.20.1.jar"
+    },
+    {
+      "fileID": 5672350,
+      "projectID": 771265,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5672/350/spell_power-0.12.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5676066,
+      "projectID": 412082,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5676/66/supplementaries-1.20-2.8.17-fabric.jar"
+    },
+    {
+      "fileID": 5275410,
+      "projectID": 1005560,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5275/410/techreborn-player-ability-lib-compat-0.0.2.jar"
+    },
+    {
+      "fileID": 5341073,
+      "projectID": 629153,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5341/73/mcw-paths-1.0.5-1.20.1fabric.jar"
+    },
+    {
+      "fileID": 4994531,
+      "projectID": 844259,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4994/531/Repurposed_Structures-Bygone_Nether_v2.zip"
+    },
+    {
+      "fileID": 4602567,
+      "projectID": 872654,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4602/567/ctov-villager-plus-add-on-v2-0.zip"
+    },
+    {
+      "fileID": 4721545,
+      "projectID": 325625,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4721/545/rer-2.9.0.jar"
+    },
+    {
+      "fileID": 5324823,
+      "projectID": 883287,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5324/823/fastpaintings-1.20-1.2.7-fabric.jar"
+    },
+    {
+      "fileID": 4813902,
+      "projectID": 443570,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4813/902/diet-fabric-2.1.1+1.20.1.jar"
+    },
+    {
+      "fileID": 5230279,
+      "projectID": 60089,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5230/279/MouseTweaks-fabric-mc1.20-2.26.jar"
+    },
+    {
+      "fileID": 5594996,
+      "projectID": 421839,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5594/996/Botania-1.20.1-446-FABRIC.jar"
+    },
+    {
+      "fileID": 5263335,
+      "projectID": 845832,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5263/335/cadmus-fabric-1.20.1-1.0.8.jar"
+    },
+    {
+      "fileID": 5136222,
+      "projectID": 377109,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5136/222/ToolStats-Fabric-1.20.1-16.0.8.jar"
+    },
+    {
+      "fileID": 4714762,
+      "projectID": 840817,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/762/LevelTextFix-Fabric-1.20.1-7.0.2.jar"
+    },
+    {
+      "fileID": 5113697,
+      "projectID": 568316,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5113/697/numismatic-overhaul-0.2.14%2b1.20.jar"
+    },
+    {
+      "fileID": 5681115,
+      "projectID": 440979,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5681/115/wthit-fabric-8.15.1.jar"
+    },
+    {
+      "fileID": 4939732,
+      "projectID": 547696,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4939/732/netherportalfix-fabric-1.20-13.0.1.jar"
+    },
+    {
+      "fileID": 5443065,
+      "projectID": 910516,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5443/65/invoke-0.2.4.jar"
+    },
+    {
+      "fileID": 5043021,
+      "projectID": 486971,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5043/21/voidz-1.0.11.jar"
+    },
+    {
+      "fileID": 4588368,
+      "projectID": 687082,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4588/368/lootbags-2.0.0-fabric.jar"
+    },
+    {
+      "fileID": 5507479,
+      "projectID": 385587,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5507/479/ComplementaryUnbound_r5.2.2.zip"
+    },
+    {
+      "fileID": 5129301,
+      "projectID": 976584,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5129/301/specutils-1.0.1.jar"
+    },
+    {
+      "fileID": 5656068,
+      "projectID": 363949,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5656/68/the_bumblezone-7.4.18%2b1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 4806285,
+      "projectID": 597988,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4806/285/RoughlyEnoughProfessions-fabric-1.20.1-2.0.2.jar"
+    },
+    {
+      "fileID": 5554252,
+      "projectID": 310111,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5554/252/RoughlyEnoughItems-12.1.740-fabric.jar"
+    },
+    {
+      "fileID": 5570159,
+      "projectID": 936015,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5570/159/lithostitched-fabric-1.20.1-1.1.8.jar"
+    },
+    {
+      "fileID": 4708962,
+      "projectID": 233564,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4708/962/TechReborn-5.8.7.jar"
+    },
+    {
+      "fileID": 5249439,
+      "projectID": 395272,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5249/439/TinyCoal-fabric-1.20.1-1.1.5.jar"
+    },
+    {
+      "fileID": 5659872,
+      "projectID": 570073,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5659/872/resourcefullib-fabric-1.20.1-2.1.29.jar"
+    },
+    {
+      "fileID": 5251047,
+      "projectID": 643780,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5251/47/projectile_damage-fabric-3.2.3%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5020442,
+      "projectID": 714059,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5020/442/resourcefulconfig-fabric-1.20.1-2.1.2.jar"
+    },
+    {
+      "fileID": 4680831,
+      "projectID": 635427,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4680/831/YeetusExperimentus-Fabric-2.3.1-build.6+mc1.20.1.jar"
+    },
+    {
+      "fileID": 5602908,
+      "projectID": 541171,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5602/908/travelersbackpack-fabric-1.20.1-9.1.16.jar"
+    },
+    {
+      "fileID": 5054938,
+      "projectID": 942224,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5054/938/hephaestusplus-1.1.1%2b1.20.jar"
+    },
+    {
+      "fileID": 4819337,
+      "projectID": 865298,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4819/337/gazebo-1.1.1%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5396033,
+      "projectID": 992333,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5396/33/letsdo-addon-compat-fabric-1.4.2.jar"
+    },
+    {
+      "fileID": 4656260,
+      "projectID": 424480,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4656/260/dragonloot-1.1.4.jar"
+    },
+    {
+      "fileID": 4583000,
+      "projectID": 547434,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4583/0/ForgeConfigAPIPort-v8.0.0-1.20.1-Fabric.jar"
+    },
+    {
+      "fileID": 4712188,
+      "projectID": 252848,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4712/188/NaturesCompass-1.20.1-2.2.3-fabric.jar"
+    },
+    {
+      "fileID": 4940609,
+      "projectID": 541329,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4940/609/EquipmentCompare-1.20.1-fabric-1.3.8.jar"
+    },
+    {
+      "fileID": 5401036,
+      "projectID": 547881,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5401/36/advancednetherite-fabric-2.1.3-1.20.1.jar"
+    },
+    {
+      "fileID": 5659312,
+      "projectID": 845863,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5659/312/skeletalremains-1.4.3.jar"
+    },
+    {
+      "fileID": 4603345,
+      "projectID": 625069,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4603/345/async-locator-fabric-1.20-1.3.0.jar"
+    },
+    {
+      "fileID": 4643773,
+      "projectID": 858064,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4643/773/ExtraordinaryExtraTotems - v1.0.3.jar"
+    },
+    {
+      "fileID": 5675085,
+      "projectID": 538392,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5675/85/modonomicon-1.20.1-fabric-1.75.0.jar"
+    },
+    {
+      "fileID": 4843361,
+      "projectID": 324888,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4843/361/ToolKit-fabric-3.0.3-build.25%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 3668220,
+      "projectID": 373261,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/3668/220/autoconfig1u-3.4.0.jar"
+    },
+    {
+      "fileID": 5647709,
+      "projectID": 621851,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5647/709/peripheralworks-fabric-1.20.1-1.4.4.jar"
+    },
+    {
+      "fileID": 5310782,
+      "projectID": 622112,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5310/782/megacells-fabric-2.3.6-1.20.1.jar"
+    },
+    {
+      "fileID": 5305053,
+      "projectID": 445838,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5305/53/animal_feeding_trough-1.1.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4749247,
+      "projectID": 547822,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4749/247/Repurposed_Structures-Better_Strongholds_v5.zip"
+    },
+    {
+      "fileID": 5567209,
+      "projectID": 821483,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5567/209/letsdo-meadow-fabric-1.3.19.jar"
+    },
+    {
+      "fileID": 5340223,
+      "projectID": 367706,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5340/223/fancymenu_fabric_3.2.3_MC_1.20.1.jar"
+    },
+    {
+      "fileID": 5161387,
+      "projectID": 308240,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5161/387/cherishedworlds-fabric-6.1.6%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4656918,
+      "projectID": 891234,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4656/918/Obscure-API-16.jar"
+    },
+    {
+      "fileID": 5658225,
+      "projectID": 317780,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5658/225/XaerosWorldMap_1.39.0_Fabric_1.20.jar"
+    },
+    {
+      "fileID": 5526853,
+      "projectID": 1057248,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5526/853/perfectbirbs-fabric-1.20.1-1.1.0.jar"
+    },
+    {
+      "fileID": 5220300,
+      "projectID": 845834,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5220/300/prometheus-fabric-1.20.1-1.2.5.jar"
+    },
+    {
+      "fileID": 5118730,
+      "projectID": 538214,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5118/730/handcrafted-fabric-1.20.1-3.0.6.jar"
+    },
+    {
+      "fileID": 5621816,
+      "projectID": 663567,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5621/816/mythicupgrades-4.1.4%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5634315,
+      "projectID": 407206,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5634/315/chat_heads-0.12.13-fabric-1.20.jar"
+    },
+    {
+      "fileID": 5622596,
+      "projectID": 867232,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5622/596/perfectplushies-fabric-1.20.1-1.11.0.jar"
+    },
+    {
+      "fileID": 5439185,
+      "projectID": 378646,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5439/185/mcw-doors-1.1.1fabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 5427505,
+      "projectID": 971636,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5427/505/letsdo-brewery-fabric-1.1.9.jar"
+    },
+    {
+      "fileID": 4847007,
+      "projectID": 627986,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4847/7/naturalist-fabric-4.0.3-1.20.1.jar"
+    },
+    {
+      "fileID": 5436579,
+      "projectID": 1001446,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5436/579/Harmonia-fabric-1.2.0.jar"
+    },
+    {
+      "fileID": 4894378,
+      "projectID": 905040,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4894/378/bellsandwhistles-0.4.5%2b1.20.1-FABRIC.jar"
+    },
+    {
+      "fileID": 5396008,
+      "projectID": 634546,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5396/8/cookingforblockheads-fabric-1.20.1-16.0.6.jar"
+    },
+    {
+      "fileID": 5682438,
+      "projectID": 899386,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5682/438/justenoughbreeding-fabric-1.20.x-1.4.0.jar"
+    },
+    {
+      "fileID": 5404564,
+      "projectID": 570630,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5404/564/lootjs-fabric-1.20.1-2.12.0.jar"
+    },
+    {
+      "fileID": 4635875,
+      "projectID": 547694,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4635/875/defaultoptions-fabric-1.20-18.0.1.jar"
+    },
+    {
+      "fileID": 5435566,
+      "projectID": 990498,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5435/566/SpectralDecorations-1.3.0.jar"
+    },
+    {
+      "fileID": 4834331,
+      "projectID": 242195,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4834/331/DarkUtilities-Fabric-1.20.1-17.0.3.jar"
+    },
+    {
+      "fileID": 4991432,
+      "projectID": 431135,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4991/432/go-fish-1.6.3%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4557703,
+      "projectID": 365727,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4557/703/dark-loading-screen-1.6.14.jar"
+    },
+    {
+      "fileID": 5637331,
+      "projectID": 871755,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5637/331/exposure-1.20.1-1.7.6-fabric.jar"
+    },
+    {
+      "fileID": 5074612,
+      "projectID": 291936,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5074/612/findme-3.2.1-fabric.jar"
+    },
+    {
+      "fileID": 4662529,
+      "projectID": 623764,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4662/529/jamlib-0.6.1+1.20.x.jar"
+    },
+    {
+      "fileID": 5654550,
+      "projectID": 544912,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5654/550/youre-in-grave-danger-fabric-2.0.6.jar"
+    },
+    {
+      "fileID": 4818011,
+      "projectID": 927915,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4818/11/structure_pool_api-1.0+1.20.1.jar"
+    },
+    {
+      "fileID": 4714774,
+      "projectID": 396234,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/774/PigPen-Fabric-1.20.1-15.0.2.jar"
+    },
+    {
+      "fileID": 5468180,
+      "projectID": 864599,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5468/180/letsdo-API-fabric-1.2.15-fabric.jar"
+    },
+    {
+      "fileID": 5460454,
+      "projectID": 439890,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5460/454/createaddition-fabric%2b1.20.1-1.2.4.jar"
+    },
+    {
+      "fileID": 5644985,
+      "projectID": 282001,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5644/985/cc-tweaked-1.20.1-fabric-1.113.0.jar"
+    },
+    {
+      "fileID": 5129312,
+      "projectID": 854949,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5129/312/fusion-1.1.1-fabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4785838,
+      "projectID": 438332,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4785/838/supermartijn642configlib-1.1.8a-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 5500371,
+      "projectID": 912767,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5500/371/azurelibarmor-fabric-1.20.1-2.0.6.jar"
+    },
+    {
+      "fileID": 4976004,
+      "projectID": 623678,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4976/4/auto-workstations-%5bMC1.20.1%5d-1.0-rc.21.jar"
+    },
+    {
+      "fileID": 4933324,
+      "projectID": 381257,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4933/324/completeconfig-2.5.2.jar"
+    },
+    {
+      "fileID": 5609796,
+      "projectID": 910078,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5609/796/zenith_attributes-0.2.7.jar"
+    },
+    {
+      "fileID": 4863305,
+      "projectID": 699872,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4863/305/accelerated-decay-fabric-3.0.1%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 4585394,
+      "projectID": 615459,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4585/394/status-effect-bars-1.0.3.jar"
+    },
+    {
+      "fileID": 5588163,
+      "projectID": 223794,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5588/163/appliedenergistics2-fabric-15.2.12.jar"
+    },
+    {
+      "fileID": 5419266,
+      "projectID": 319596,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5419/266/Pehkui-3.8.3%2b1.14.4-1.21.jar"
+    },
+    {
+      "fileID": 5670555,
+      "projectID": 254284,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5670/555/AmbientSounds_FABRIC_v6.0.6_mc1.20.1.jar"
+    },
+    {
+      "fileID": 4714524,
+      "projectID": 353641,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/524/jumpoverfences-1.0-SNAPSHOT.jar"
+    },
+    {
+      "fileID": 5429935,
+      "projectID": 365521,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5429/935/pling-1.8.1.jar"
+    },
+    {
+      "fileID": 4873296,
+      "projectID": 841617,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4873/296/libz-1.0.3.jar"
+    },
+    {
+      "fileID": 5252387,
+      "projectID": 811003,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5252/387/Farmersrespite-Fabric-3.0.2.jar"
+    },
+    {
+      "fileID": 5340331,
+      "projectID": 670011,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5340/331/netherdepthsupgrade-fabric-3.1.6-1.20.jar"
+    },
+    {
+      "fileID": 5142502,
+      "projectID": 416797,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5142/502/konkrete_fabric_1.8.1_MC_1.20.1.jar"
+    },
+    {
+      "fileID": 4597740,
+      "projectID": 832021,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4597/740/itemfavorites-1.0.4+1.20.1.jar"
+    },
+    {
+      "fileID": 5205373,
+      "projectID": 394915,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5205/373/bewitchment-1.20-8.jar"
+    },
+    {
+      "fileID": 4964549,
+      "projectID": 334853,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4964/549/SimpleDiscordRichPresence-fabric-4.0.3-build.40%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 4599484,
+      "projectID": 442282,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4599/484/styledplayerlist-3.1.1+1.20.1.jar"
+    },
+    {
+      "fileID": 5592163,
+      "projectID": 350727,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5592/163/xercapaint-fabric-1.20.1-1.0.1.jar"
+    },
+    {
+      "fileID": 5654679,
+      "projectID": 363392,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5654/679/BuildingWands-mc1.20.1-2.7-fabric-beta.jar"
+    },
+    {
+      "fileID": 4578291,
+      "projectID": 393563,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4578/291/blur-3.1.0.jar"
+    },
+    {
+      "fileID": 4690489,
+      "projectID": 452834,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4690/489/right-click-harvest-3.2.3+1.19.x-1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 5507475,
+      "projectID": 627557,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5507/475/ComplementaryReimagined_r5.2.2.zip"
+    },
+    {
+      "fileID": 4620539,
+      "projectID": 597248,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4620/539/duckling-3.0.0-fabric.jar"
+    },
+    {
+      "fileID": 4715716,
+      "projectID": 430382,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4715/716/BeaconOverhaul-1.8.4+1.20.jar"
+    },
+    {
+      "fileID": 3821870,
+      "projectID": 433518,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/3821/870/lazydfu-0.1.3.jar"
+    },
+    {
+      "fileID": 4760021,
+      "projectID": 521126,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4760/21/visuality-0.7.1%2b1.20.jar"
+    },
+    {
+      "fileID": 4582965,
+      "projectID": 623560,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4582/965/Log-Begone-Fabric-1.20.1-1.0.8.jar"
+    },
+    {
+      "fileID": 5278537,
+      "projectID": 256717,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5278/537/Clumps-fabric-1.20.1-12.0.0.4.jar"
+    },
+    {
+      "fileID": 4769515,
+      "projectID": 590993,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/515/YungsExtras-1.20-Fabric-4.0.3.jar"
+    },
+    {
+      "fileID": 5517730,
+      "projectID": 794452,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5517/730/convenientdecor-0.4.2.jar"
+    },
+    {
+      "fileID": 5578218,
+      "projectID": 635510,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5578/218/wardentools-2.5.0%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 4810977,
+      "projectID": 459857,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4810/977/ferritecore-6.0.1-fabric.jar"
+    },
+    {
+      "fileID": 5383715,
+      "projectID": 306612,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5383/715/fabric-api-0.92.2%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5560277,
+      "projectID": 317716,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5560/277/elytraslot-fabric-6.4.2%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5638955,
+      "projectID": 312289,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5638/955/blockus-2.7.16%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5405529,
+      "projectID": 809311,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5405/529/beautify-1.2.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5450763,
+      "projectID": 979326,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5450/763/sophisticatedstorage-0.8.60%2bmc1.20.1-SNAPSHOT-build.104.jar"
+    },
+    {
+      "fileID": 5631919,
+      "projectID": 854213,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5631/919/colorfulhearts-fabric-1.20.1-4.3.15.jar"
+    },
+    {
+      "fileID": 4626781,
+      "projectID": 261251,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4626/781/bwncr-fabric-1.20.1-3.17.0.jar"
+    },
+    {
+      "fileID": 4862075,
+      "projectID": 915115,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4862/75/formations-1.0.2-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 4631405,
+      "projectID": 564941,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4631/405/ShowMeWhatYouGot-1.20-1.1.1.jar"
+    },
+    {
+      "fileID": 5043014,
+      "projectID": 390991,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5043/14/adventurez-1.4.20.jar"
+    },
+    {
+      "fileID": 5336735,
+      "projectID": 998782,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5336/735/NethersDelight-Refabricated-1.20.1-4.1.1.jar"
+    },
+    {
+      "fileID": 5655499,
+      "projectID": 962162,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5655/499/ranged_weapon_api-1.1.4%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5259006,
+      "projectID": 482265,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5259/6/trofers-fabric-5.0.2.jar"
+    },
+    {
+      "fileID": 5263581,
+      "projectID": 845833,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5263/581/argonauts-fabric-1.20.1-1.0.10.jar"
+    },
+    {
+      "fileID": 5477566,
+      "projectID": 822685,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5477/566/BetterThanBunnies-1.20.1-Fabric-1.4.0.jar"
+    },
+    {
+      "fileID": 5372399,
+      "projectID": 388800,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5372/399/polymorph-fabric-0.49.5%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4587198,
+      "projectID": 380548,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4587/198/riverredux-0.3.1.jar"
+    },
+    {
+      "fileID": 5483648,
+      "projectID": 857513,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5483/648/EnhancedWorkbenches-1.1.3%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4708547,
+      "projectID": 821708,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4708/547/Repurposed_Structures-Wizards_v3.zip"
+    },
+    {
+      "fileID": 4613757,
+      "projectID": 273279,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4613/757/antighost-1.20-fabric0.83.0-1.1.5.jar"
+    },
+    {
+      "fileID": 4597704,
+      "projectID": 325471,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4597/704/InventorySorter-1.9.0-1.20.jar"
+    },
+    {
+      "fileID": 5253013,
+      "projectID": 906239,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5253/13/interiors-0.5.3%2bfabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4848243,
+      "projectID": 870210,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4848/243/trenzalore-fabric-3.3.10%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 4721788,
+      "projectID": 577629,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4721/788/playdate-2.0.0-fabric.jar"
+    },
+    {
+      "fileID": 4582654,
+      "projectID": 682644,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4582/654/bushierflowers-0.0.3-1.20.1.jar"
+    },
+    {
+      "fileID": 4582736,
+      "projectID": 495453,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4582/736/axolotl-item-fix-1.1.7.jar"
+    },
+    {
+      "fileID": 4749248,
+      "projectID": 554329,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4749/248/Repurposed_Structures-Better_Dungeons_v5.zip"
+    },
+    {
+      "fileID": 5286401,
+      "projectID": 888624,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5286/401/rechiseledcreate-1.0.2a-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 4857288,
+      "projectID": 486080,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4857/288/morevillagers-fabric-1.20.1-5.0.0.jar"
+    },
+    {
+      "fileID": 5532168,
+      "projectID": 623908,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5532/168/%5bFabric%5dCTOV-v3.4.6.jar"
+    },
+    {
+      "fileID": 5273147,
+      "projectID": 696251,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5273/147/porting_lib-2.3.4%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4749246,
+      "projectID": 634440,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4749/246/Repurposed_Structures-Better_Witch_Huts_v4.zip"
+    },
+    {
+      "fileID": 4904184,
+      "projectID": 610632,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4904/184/Applied-Botanics-fabric-1.5.0.jar"
+    },
+    {
+      "fileID": 4752782,
+      "projectID": 825227,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4752/782/Repurposed_Structures-Chef's_Delight_v3.zip"
+    },
+    {
+      "fileID": 4565744,
+      "projectID": 359522,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4565/744/pal-1.8.0.jar"
+    },
+    {
+      "fileID": 5666908,
+      "projectID": 499980,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5666/908/moonlight-1.20-2.12.17-fabric.jar"
+    },
+    {
+      "fileID": 5173501,
+      "projectID": 341284,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5173/501/trinkets-3.7.2.jar"
+    },
+    {
+      "fileID": 4576371,
+      "projectID": 488090,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4576/371/midnightlib-fabric-1.4.1.jar"
+    },
+    {
+      "fileID": 4944647,
+      "projectID": 438718,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4944/647/alloy-forgery-2.1.2%2b1.20.jar"
+    },
+    {
+      "fileID": 5407756,
+      "projectID": 620784,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5407/756/geode_plus-fabric-1.2.5-1.20.1.jar"
+    },
+    {
+      "fileID": 5351581,
+      "projectID": 636540,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5351/581/Structory_1.20.x_v1.3.5.jar"
+    },
+    {
+      "fileID": 5477593,
+      "projectID": 822698,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5477/593/LetSleepingDogsLie-1.20.1-Fabric-1.3.0.jar"
+    },
+    {
+      "fileID": 4769440,
+      "projectID": 631020,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/440/YungsBetterDesertTemples-1.20-Fabric-3.0.3.jar"
+    },
+    {
+      "fileID": 4874112,
+      "projectID": 825234,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4874/112/Repurposed_Structures-VillagersPlus_v3.zip"
+    },
+    {
+      "fileID": 5378804,
+      "projectID": 887708,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5378/804/minerally-1.20.2-1.2.jar"
+    },
+    {
+      "fileID": 4758678,
+      "projectID": 482621,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4758/678/nears-1.20.1-2.0.4.jar"
+    },
+    {
+      "fileID": 4936436,
+      "projectID": 459929,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4936/436/ae2wtlib-15.2.1-fabric.jar"
+    },
+    {
+      "fileID": 5086122,
+      "projectID": 955991,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5086/122/AE2-MouseTweaks-Fix-2.0.0%2b1.20.1%2bfabric.jar"
+    },
+    {
+      "fileID": 4615622,
+      "projectID": 415681,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4615/622/connectiblechains-2.2.1%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5473587,
+      "projectID": 502372,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5473/587/mcw-lights-1.1.1-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 5609062,
+      "projectID": 616457,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5609/62/lodestone-1.20.1-1.6.2.1b-fabric.jar"
+    },
+    {
+      "fileID": 5331704,
+      "projectID": 421649,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5331/704/YungsApi-1.20-Fabric-4.0.5.jar"
+    },
+    {
+      "fileID": 5476602,
+      "projectID": 858032,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5476/602/MoreChestVariants-1.5.6%2b1.20.2-Fabric.jar"
+    },
+    {
+      "fileID": 5184594,
+      "projectID": 655608,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5184/594/create_jetpack-fabric-4.2.0.jar"
+    },
+    {
+      "fileID": 5550420,
+      "projectID": 918840,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5550/420/formationsnether-1.0.5.jar"
+    },
+    {
+      "fileID": 5378181,
+      "projectID": 565956,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5378/181/TerraBlender-fabric-1.20.1-3.0.1.7.jar"
+    },
+    {
+      "fileID": 5292049,
+      "projectID": 688418,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5292/49/tamago-3.0.jar"
+    },
+    {
+      "fileID": 5477557,
+      "projectID": 229060,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5477/557/iChunUtil-1.20.1-Fabric-1.0.0.jar"
+    },
+    {
+      "fileID": 4658636,
+      "projectID": 514882,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4658/636/AdvancementPlaques-1.20.1-fabric-1.4.11.jar"
+    },
+    {
+      "fileID": 4719291,
+      "projectID": 688367,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4719/291/merequester-fabric-1.20.1-1.1.4.jar"
+    },
+    {
+      "fileID": 4883005,
+      "projectID": 689252,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4883/5/YungsBetterOceanMonuments-1.20-Fabric-3.0.4.jar"
+    },
+    {
+      "fileID": 5331298,
+      "projectID": 688231,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5331/298/Steam_Rails-1.6.4%2bfabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4638050,
+      "projectID": 498794,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4638/50/ironchests-5.0.2-fabric.jar"
+    },
+    {
+      "fileID": 5239655,
+      "projectID": 859365,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5239/655/totw_modded-fabric-1.20.1-1.0.5.jar"
+    },
+    {
+      "fileID": 4966124,
+      "projectID": 393236,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4966/124/Patchouli-1.20.1-84-FABRIC.jar"
+    },
+    {
+      "fileID": 4677686,
+      "projectID": 656453,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4677/686/piercingpaxels-1.0.12.jar"
+    },
+    {
+      "fileID": 5673977,
+      "projectID": 565254,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5673/977/EndsPhantasm-1.20.1-0.4.1.jar"
+    },
+    {
+      "fileID": 5089408,
+      "projectID": 362528,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5089/408/decorative_blocks-fabric-1.20.1-4.1.3.jar"
+    },
+    {
+      "fileID": 4750077,
+      "projectID": 690393,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4750/77/Repurposed_Structures-Better_Monuments_v6.zip"
+    },
+    {
+      "fileID": 5559572,
+      "projectID": 978786,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5559/572/storagedelight-2024.07.23-1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 5655463,
+      "projectID": 308769,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5655/463/fabric-language-kotlin-1.12.1%2bkotlin.2.0.20.jar"
+    },
+    {
+      "fileID": 4769084,
+      "projectID": 480684,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/84/YungsBetterStrongholds-1.20-Fabric-4.0.3.jar"
+    },
+    {
+      "fileID": 5275403,
+      "projectID": 501590,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5275/403/additionallanterns-1.1.1a-fabric-mc1.20.2.jar"
+    },
+    {
+      "fileID": 4804136,
+      "projectID": 827281,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4804/136/WDA-NoFlyingStructures-OWEND-1.18.2-1.20.1.zip"
+    },
+    {
+      "fileID": 4629826,
+      "projectID": 356643,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4629/826/authme-7.0.2+1.20.jar"
+    },
+    {
+      "fileID": 4998052,
+      "projectID": 824498,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4998/52/spectrum-jetpacks-1.0.3%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5522040,
+      "projectID": 908741,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5522/40/embeddium-fabric-0.3.25%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5193464,
+      "projectID": 817666,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5193/464/YungsBetterNetherFortresses-1.20-Fabric-2.0.6.jar"
+    },
+    {
+      "fileID": 5175793,
+      "projectID": 694962,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5175/793/gag-fabric-3.0.0-build.10.jar"
+    },
+    {
+      "fileID": 4950461,
+      "projectID": 410902,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4950/461/wraith-waystones-3.3.2%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5442191,
+      "projectID": 453925,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5442/191/mcw-fences-1.1.2-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 5607266,
+      "projectID": 667464,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5607/266/betterstats-3.12.6%2bfabric-1.20.1.jar"
+    },
+    {
+      "fileID": 4584710,
+      "projectID": 319582,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4584/710/respawnablepets-1.20-1.jar"
+    },
+    {
+      "fileID": 5286340,
+      "projectID": 558998,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5286/340/rechiseled-1.1.6-fabric-mc1.20.jar"
+    },
+    {
+      "fileID": 4814397,
+      "projectID": 280200,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4814/397/colytra-fabric-6.2.2+1.20.1.jar"
+    },
+    {
+      "fileID": 5240495,
+      "projectID": 351725,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5240/495/mcw-bridges-3.0.0-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 3903067,
+      "projectID": 557746,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/3903/67/timeoutout-1.0.3+1.19.1.jar"
+    },
+    {
+      "fileID": 5161378,
+      "projectID": 844235,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5161/378/bewitchment-rei-1.0.0.jar"
+    },
+    {
+      "fileID": 4746244,
+      "projectID": 493348,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4746/244/styled-chat-2.2.3+1.20.1.jar"
+    },
+    {
+      "fileID": 5125712,
+      "projectID": 561625,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5125/712/creeperoverhaul-3.0.2-fabric.jar"
+    },
+    {
+      "fileID": 4769520,
+      "projectID": 590988,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/520/YungsBridges-1.20-Fabric-4.0.3.jar"
+    },
+    {
+      "fileID": 4999733,
+      "projectID": 917314,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4999/733/Repurposed_Structures-Better_Jungle_Temples_v6.zip"
+    },
+    {
+      "fileID": 4488547,
+      "projectID": 849817,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4488/547/fullstackwatchdog-1.0.1%2b1.19.2-fabric.jar"
+    },
+    {
+      "fileID": 5672385,
+      "projectID": 807653,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5672/385/spell_engine-0.15.10%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4953470,
+      "projectID": 539382,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4953/470/Iceberg-1.20.1-fabric-1.1.18.jar"
+    },
+    {
+      "fileID": 5671923,
+      "projectID": 927591,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5671/923/frightsdelight-fabric-1.20.1-1.1.0-beta-1.jar"
+    },
+    {
+      "fileID": 4650327,
+      "projectID": 665526,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4650/327/Prism-1.20.1-fabric-1.0.5.jar"
+    },
+    {
+      "fileID": 5159191,
+      "projectID": 316873,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5159/191/charmofundying-fabric-6.5.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5351596,
+      "projectID": 783522,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5351/596/Structory_Towers_1.20.x_v1.0.7.jar"
+    },
+    {
+      "fileID": 5580947,
+      "projectID": 484064,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5580/947/malum-1.20.1-1.6.2.0g-fabric.jar"
+    },
+    {
+      "fileID": 4662635,
+      "projectID": 656346,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4662/635/lmft-1.0.2%2b1.20-fabric.jar"
+    },
+    {
+      "fileID": 5157533,
+      "projectID": 863479,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5157/533/sprinklerz-0.5.1_fabric.jar"
+    },
+    {
+      "fileID": 5567428,
+      "projectID": 662675,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5567/428/ends_delight-fabric-1.20.1-2.1.jar"
+    },
+    {
+      "fileID": 5536226,
+      "projectID": 667894,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5536/226/Hephaestus-1.20.1-3.6.4.279.jar"
+    },
+    {
+      "fileID": 5305092,
+      "projectID": 398614,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5305/92/deepmoblearning-refabricated-0.6.1-BETA%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5668908,
+      "projectID": 454372,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5668/908/supermartijn642corelib-1.1.17a-fabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4911083,
+      "projectID": 280510,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4911/83/AttributeFix-Fabric-1.20.1-21.0.4.jar"
+    },
+    {
+      "fileID": 4981340,
+      "projectID": 953637,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4981/340/DungeonsAriseSevenSeas-1.20.x-1.0.2-fabric.jar"
+    },
+    {
+      "fileID": 5329807,
+      "projectID": 442921,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5329/807/MiningDimensions_Fabric-1.20.1-1.6.4.jar"
+    },
+    {
+      "fileID": 5284014,
+      "projectID": 858542,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5284/14/Searchables-fabric-1.20.1-1.0.3.jar"
+    },
+    {
+      "fileID": 4503040,
+      "projectID": 853631,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4503/40/WDA-VanillaLoot-1.18.2-1.19.2-0.0.1.zip"
+    },
+    {
+      "fileID": 5139711,
+      "projectID": 938643,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5139/711/melody_fabric_1.0.4_MC_1.20.1-1.20.4.jar"
+    },
+    {
+      "fileID": 5383889,
+      "projectID": 868403,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5383/889/trowel-1.3.0-1.20.jar"
+    },
+    {
+      "fileID": 5604689,
+      "projectID": 711539,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5604/689/tcdcommons-3.12.3%2bfabric-1.20.1.jar"
+    },
+    {
+      "fileID": 5451185,
+      "projectID": 648781,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5451/185/reacharound%2b1.20-1.3.0.jar"
+    },
+    {
+      "fileID": 4648536,
+      "projectID": 388832,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4648/536/kibe-1.10.1-BETA+1.20.jar"
+    },
+    {
+      "fileID": 5406937,
+      "projectID": 845831,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5406/937/Heracles-fabric-1.20.1-1.1.13.jar"
+    },
+    {
+      "fileID": 4961271,
+      "projectID": 501456,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4961/271/villager-hats-1.6.2%2b1.20.jar"
+    },
+    {
+      "fileID": 5657171,
+      "projectID": 383129,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5657/171/connectedglass-1.1.12-fabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4602226,
+      "projectID": 869986,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4602/226/ctov-beautify-add-on-v2-0.zip"
+    },
+    {
+      "fileID": 4714798,
+      "projectID": 633747,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/798/WhatTheBucket-Fabric-1.20.1-11.0.3.jar"
+    },
+    {
+      "fileID": 4753363,
+      "projectID": 870007,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4753/363/ctov-wizards-add-on-v2-1.zip"
+    },
+    {
+      "fileID": 5116772,
+      "projectID": 635042,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5116/772/ad_astra-fabric-1.20.1-1.15.18.jar"
+    },
+    {
+      "fileID": 5574203,
+      "projectID": 834273,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5574/203/ctov-croptopia-v2-1-add-on.zip"
+    },
+    {
+      "fileID": 4751399,
+      "projectID": 736986,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4751/399/chefs-delight-1.0.3-fabric-1.20.1.jar"
+    },
+    {
+      "fileID": 5515065,
+      "projectID": 514923,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5515/65/tempad-fabric-1.20.1-2.3.4.jar"
+    },
+    {
+      "fileID": 4602230,
+      "projectID": 834282,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4602/230/ctov-chefs-delight-add-on-v2-0.zip"
+    },
+    {
+      "fileID": 5672336,
+      "projectID": 686911,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5672/336/ImmediatelyFast-Fabric-1.2.21%2b1.20.4.jar"
+    },
+    {
+      "fileID": 5620885,
+      "projectID": 962885,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5620/885/letsdo-bloomingnature-fabric-1.0.9.jar"
+    },
+    {
+      "fileID": 4769064,
+      "projectID": 373591,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4769/64/YungsBetterMineshafts-1.20-Fabric-4.0.4.jar"
+    },
+    {
+      "fileID": 5320021,
+      "projectID": 433175,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5320/21/Chunky-1.3.146.jar"
+    },
+    {
+      "fileID": 5656243,
+      "projectID": 301034,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5656/243/entangled-1.3.19-fabric-mc1.20.4.jar"
+    },
+    {
+      "fileID": 4843795,
+      "projectID": 664053,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4843/795/utilitybelt-1.3.6%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5227384,
+      "projectID": 941096,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5227/384/polyeng-fabric-0.1.1-1.20.1.jar"
+    },
+    {
+      "fileID": 5418389,
+      "projectID": 876103,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5418/389/morearmortrims-1.3.1-1.20.1.jar"
+    },
+    {
+      "fileID": 5423988,
+      "projectID": 228525,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5423/988/Bookshelf-Fabric-1.20.1-20.2.13.jar"
+    },
+    {
+      "fileID": 5331402,
+      "projectID": 391366,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5331/402/repurposed_structures-7.1.15%2b1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 4708516,
+      "projectID": 554331,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4708/516/Repurposed_Structures-Farmers_Delight_v6.zip"
+    },
+    {
+      "fileID": 4783915,
+      "projectID": 640296,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4783/915/Repurposed_Structures-Better_Desert_Temples_v8.zip"
+    },
+    {
+      "fileID": 4810096,
+      "projectID": 364762,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4810/96/compressed_blocks-1.0.0.jar"
+    },
+    {
+      "fileID": 5526212,
+      "projectID": 659674,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5526/212/sliceanddice-fabric-3.2.3.jar"
+    },
+    {
+      "fileID": 5271361,
+      "projectID": 525586,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5271/361/YungsBetterDungeons-1.20-Fabric-4.0.4.jar"
+    },
+    {
+      "fileID": 4749199,
+      "projectID": 532610,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4749/199/owo-lib-0.11.2%2b1.20.jar"
+    },
+    {
+      "fileID": 5598370,
+      "projectID": 250419,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5598/370/EnchantmentDescriptions-Fabric-1.20.1-17.1.18.jar"
+    },
+    {
+      "fileID": 4782283,
+      "projectID": 324564,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4782/283/amecs-1.3.10+mc.1.20.1.jar"
+    },
+    {
+      "fileID": 4857271,
+      "projectID": 570463,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4857/271/ecologics-fabric-1.20.1-2.2.0.jar"
+    },
+    {
+      "fileID": 5425425,
+      "projectID": 622967,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5425/425/Ribbits-1.20.1-Fabric-3.0.0.jar"
+    },
+    {
+      "fileID": 4942394,
+      "projectID": 571503,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4942/394/guardvillagers-2.0.9-1.20.1.jar"
+    },
+    {
+      "fileID": 5558172,
+      "projectID": 659110,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5558/172/RegionsUnexploredFabric-0.5.6%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5517425,
+      "projectID": 633823,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5517/425/almostunified-fabric-1.20.1-0.9.4.jar"
+    },
+    {
+      "fileID": 5170120,
+      "projectID": 876129,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5170/120/create_enchantment_industry-1.2.16.jar"
+    },
+    {
+      "fileID": 4618277,
+      "projectID": 618770,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4618/277/paginatedadvancements-2.3.0.jar"
+    },
+    {
+      "fileID": 5685659,
+      "projectID": 263420,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5685/659/Xaeros_Minimap_24.4.0_Fabric_1.20.jar"
+    },
+    {
+      "fileID": 5176880,
+      "projectID": 841890,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5176/880/athena-fabric-1.20.1-3.1.2.jar"
+    },
+    {
+      "fileID": 4815126,
+      "projectID": 610492,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4815/126/another_furniture-fabric-1.20.1-3.0.1.jar"
+    },
+    {
+      "fileID": 5407904,
+      "projectID": 892005,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5407/904/ExtendedAE-1.20-1.0.2-fabric.jar"
+    },
+    {
+      "fileID": 5174184,
+      "projectID": 408118,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5174/184/megane-fabric-20.1.1.jar"
+    },
+    {
+      "fileID": 4709585,
+      "projectID": 832658,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4709/585/duckyperiphs-1.20.1-1.3.1-fabric.jar"
+    },
+    {
+      "fileID": 4592448,
+      "projectID": 406343,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4592/448/BetterPingDisplay-Fabric-1.20.1-1.1.1.jar"
+    },
+    {
+      "fileID": 5450748,
+      "projectID": 979322,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5450/748/sophisticatedbackpacks-3.19.5%2bmc1.20.1-SNAPSHOT-build.104.jar"
+    },
+    {
+      "fileID": 4716033,
+      "projectID": 696205,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4716/33/DarkModeEverywhere-1.20.1-1.2.2.jar"
+    },
+    {
+      "fileID": 4845484,
+      "projectID": 910125,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4845/484/mi_sound_addon-1.0.2-1.20.1.jar"
+    },
+    {
+      "fileID": 4664263,
+      "projectID": 580681,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4664/263/immersive_armors-1.6.1+1.20.1-fabric.jar"
+    },
+    {
+      "fileID": 5593269,
+      "projectID": 1032670,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5593/269/tankstorage-0.1.1%2b1.20.1.jar"
+    },
+    {
+      "fileID": 4587215,
+      "projectID": 658587,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4587/215/player-animation-lib-fabric-1.0.2-rc1%2b1.20.jar"
+    },
+    {
+      "fileID": 5545800,
+      "projectID": 568372,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5545/800/fish_of_thieves-mc1.20.1-v3.0.7-fabric.jar"
+    },
+    {
+      "fileID": 5378285,
+      "projectID": 492246,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5378/285/MaxHealthFix-Fabric-1.20.1-12.0.3.jar"
+    },
+    {
+      "fileID": 4940615,
+      "projectID": 542478,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4940/615/LegendaryTooltips-1.20.1-fabric-1.4.5.jar"
+    },
+    {
+      "fileID": 5628619,
+      "projectID": 556967,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5628/619/spectrum-1.7.16-deeper-down.jar"
+    },
+    {
+      "fileID": 5368593,
+      "projectID": 354339,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5368/593/OpenLoader-Fabric-1.20.1-19.0.4.jar"
+    },
+    {
+      "fileID": 4620616,
+      "projectID": 883456,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4620/616/ctov-gazebos-add-on-v1-0.zip"
+    },
+    {
+      "fileID": 4718252,
+      "projectID": 667391,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4718/252/framework-fabric-1.20.1-0.6.16.jar"
+    },
+    {
+      "fileID": 5320667,
+      "projectID": 858691,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5320/667/letsdo-beachparty-fabric-1.1.5.jar"
+    },
+    {
+      "fileID": 4714404,
+      "projectID": 904898,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/404/Repurposed_Structures-Gazebo_v2.zip"
+    },
+    {
+      "fileID": 5523011,
+      "projectID": 909723,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5523/11/OnlyHammers-1.20.1-0.6.jar"
+    },
+    {
+      "fileID": 5567134,
+      "projectID": 886559,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5567/134/letsdo-bakery-fabric-1.1.15.jar"
+    },
+    {
+      "fileID": 5429097,
+      "projectID": 618790,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5429/97/minecells-1.8.3.jar"
+    },
+    {
+      "fileID": 4602564,
+      "projectID": 648065,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4602/564/ctov-mores-villager-add-on-v2-0.zip"
+    },
+    {
+      "fileID": 5647716,
+      "projectID": 621088,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5647/716/peripheralium-fabric-1.20.1-0.7.0.jar"
+    },
+    {
+      "fileID": 4716368,
+      "projectID": 473131,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4716/368/builtin-servers-2.1+1.20-fabric.jar"
+    },
+    {
+      "fileID": 5331761,
+      "projectID": 897678,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5331/761/YungsBetterJungleTemples-1.20-Fabric-2.0.5.jar"
+    },
+    {
+      "fileID": 5265767,
+      "projectID": 941523,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5265/767/IndustrialReborn-1.20.1-1.3.1.jar"
+    },
+    {
+      "fileID": 5418365,
+      "projectID": 410127,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5418/365/mythicmetals-0.19.9%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5284659,
+      "projectID": 916710,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5284/659/bankstorage-1.2.0.jar"
+    },
+    {
+      "fileID": 5620378,
+      "projectID": 570431,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5620/378/trade-cycling-fabric-1.20.1-1.0.14.jar"
+    },
+    {
+      "fileID": 4620803,
+      "projectID": 682371,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4620/803/menulogue-fabric-1.20.1-1.0.4.jar"
+    },
+    {
+      "fileID": 4784394,
+      "projectID": 615134,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4784/394/badpackets-fabric-0.4.3.jar"
+    },
+    {
+      "fileID": 5439815,
+      "projectID": 889205,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5439/815/AnvilRepairing-Fabric-1.20.1-4.0.9.jar"
+    },
+    {
+      "fileID": 5450729,
+      "projectID": 979317,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5450/729/sophisticatedcore-0.5.109%2bmc1.20.1-SNAPSHOT-build.104.jar"
+    },
+    {
+      "fileID": 5019622,
+      "projectID": 574409,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5019/622/endermanoverhaul-fabric-1.20.1-1.0.4.jar"
+    },
+    {
+      "fileID": 5245234,
+      "projectID": 624165,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5245/234/create-fabric-0.5.1-f-build.1417%2bmc1.20.1.jar"
+    },
+    {
+      "fileID": 5492066,
+      "projectID": 926511,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5492/66/thaumon-fabric-2.3.0%2b1.20.1.jar"
+    },
+    {
+      "fileID": 5554929,
+      "projectID": 352039,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5554/929/mcw-roofs-2.3.1-mc1.20.1fabric.jar"
+    },
+    {
+      "fileID": 5363344,
+      "projectID": 448231,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5363/344/ftb-ultimine-fabric-2001.1.5.jar"
+    },
+    {
+      "fileID": 4671077,
+      "projectID": 504899,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4671/77/deepslatecutting-fabric-1.7.0.jar"
+    },
+    {
+      "fileID": 5653583,
+      "projectID": 361867,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5653/583/packedup-1.0.30b-fabric-mc1.20.1.jar"
+    },
+    {
+      "fileID": 4576290,
+      "projectID": 457043,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4576/290/extrasponges-1.5.0.jar"
+    },
+    {
+      "fileID": 4681153,
+      "projectID": 318449,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4681/153/cardinal-components-api-5.2.2.jar"
+    },
+    {
+      "fileID": 4610472,
+      "projectID": 634062,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4610/472/NoChatReports-FABRIC-1.20.1-v2.2.2.jar"
+    },
+    {
+      "fileID": 4714784,
+      "projectID": 377548,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/784/StrongerSnowballs-Fabric-1.20.1-13.0.2.jar"
+    },
+    {
+      "fileID": 4765724,
+      "projectID": 360438,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4765/724/lithium-fabric-mc1.20.1-0.11.2.jar"
+    },
+    {
+      "fileID": 4714778,
+      "projectID": 393149,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4714/778/Runelic-Fabric-1.20.1-18.0.2.jar"
+    },
+    {
+      "fileID": 5644969,
+      "projectID": 500525,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5644/969/balm-fabric-1.20.1-7.3.9.jar"
+    },
+    {
+      "fileID": 5509682,
+      "projectID": 409341,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/5509/682/custom-portals-3.4.0-1.20.1.jar"
+    },
+    {
+      "fileID": 4749358,
+      "projectID": 554586,
+      "required": true,
+      "downloadUrl": "https://edge.forgecdn.net/files/4749/358/farmingforblockheads-fabric-1.20.1-14.0.2.jar"
+    }
+  ],
+  "name": "All of Fabric 7",
+  "manifestType": "minecraftModpack",
+  "overrides": "overrides",
+  "version": "2.5.3",
+  "manifestVersion": 1,
+  "minecraft": {
+    "modLoaders": [
+      {
+        "primary": true,
+        "id": "fabric-0.16.0"
+      }
+    ],
+    "version": "1.20.1"
+  }
+}

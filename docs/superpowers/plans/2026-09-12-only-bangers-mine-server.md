@@ -14,7 +14,7 @@
 
 - Repositório público com nome exato `only-bangers-mine-server`.
 - Não publicar tokens, senhas, chaves privadas, configurações pessoais, logs transitórios ou caches.
-- Não publicar metadados locais de agentes nem instruções específicas do workspace (`.agents/`, `.codex/`, `.dual-graph*/`, `AGENTS.md`, `CODEX.md`).
+- Não publicar metadados locais de agentes nem instruções/configurações específicas do workspace (`.agents/`, `.codex/`, `.dual-graph*/`, `AGENTS.md`, `CODEX.md`, `opencode.json`) ou arquivos `.DS_Store`.
 - Não adicionar dependências para documentação ou diagramas.
 - Não reescrever o instalador nem alterar receitas/mods sem defeito comprovado.
 - O arquivo `mine server.zip` (~618 MB) não entra no Git regular: excede o limite de arquivo do GitHub e será mantido fora do commit, com a exclusão documentada.

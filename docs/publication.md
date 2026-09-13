@@ -18,7 +18,9 @@ Também ficam fora segredos, logs, caches, arquivos temporários e partes
 incompletas de downloads, conforme `.gitignore`. Metadados locais de agentes
 (`.agents/`, `.codex/`, `.dual-graph/`, `.dual-graph-context/`) e instruções
 específicas deste workspace (`AGENTS.md`, `CODEX.md`) também não fazem parte
-do produto público.
+do produto público. `opencode.json` também é configuração local do ambiente e
+fica fora do produto. Arquivos `.DS_Store` também são descartados por serem
+metadados do Finder, não conteúdo do pack.
 
 ## Auditoria antes de publicar
 

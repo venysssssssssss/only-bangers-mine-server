@@ -1,0 +1,25 @@
+{
+  "minecraft": {
+    "version": "1.20.1",
+    "modLoaders": [
+      {
+        "id": "fabric-0.16.0",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "AOF7 test",
+  "version": "2.5.3",
+  "files": [
+    {
+      "projectID": 1,
+      "fileID": 2,
+      "required": true,
+      "downloadUrl": "https://example.com/example.jar",
+      "filename": "mods/example.jar"
+    }
+  ],
+  "overrides": "overrides"
+}
