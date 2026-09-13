@@ -1,0 +1,19 @@
+.env
+.env.*
+*.pem
+*.key
+*.p12
+logs/
+__pycache__/
+*.py[cod]
+*.part
+.pytest_cache/
+.venv/
+.agents/
+.codex/
+.dual-graph/
+.dual-graph-context/
+AGENTS.md
+CODEX.md
+mine server.zip
+mine server.zip:Zone.Identifier
