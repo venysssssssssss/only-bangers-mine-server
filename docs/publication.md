@@ -42,4 +42,5 @@ locais do Minecraft Launcher.
 - Repositório: `only-bangers-mine-server`
 - Visibilidade: pública
 - Branch: `main`
-- URL: será registrada após a criação via `gh`
+- URL: https://github.com/venysssssssssss/only-bangers-mine-server
+- Publicado via: `gh repo create ... --public --source=. --remote=origin --push`
