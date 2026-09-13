@@ -6,14 +6,15 @@ integridade do instalador.
 
 O projeto foi pensado para Windows: o usuário inicia pelo bootstrap CMD ou
 PowerShell, o instalador Python valida o manifest, baixa os arquivos com
-retomada e hashes, prepara uma instância isolada e preserva os perfis já
+retomada e registro de hashes, prepara uma instância isolada e preserva os perfis já
 existentes do Minecraft Launcher.
 
 ## Começo rápido
 
 1. Baixe ou clone este repositório em uma máquina Windows.
 2. Execute `windows-kit/Install-AOF7.cmd`.
-3. Abra o perfil `AOF7-2.5.3` criado no Minecraft Launcher.
+3. Abra o perfil `AOF7 2.5.3` criado no Minecraft Launcher (chave interna
+   `aof7-2.5.3`).
 4. Se precisar investigar uma instalação, consulte `logs\\install.log`.
 
 Para validar um manifest pequeno sem baixar o pack real:
@@ -52,8 +53,11 @@ python windows-kit/aof7_installer.py --self-test
 ```
 
 O manifest completo contém 436 entradas HTTPS para Minecraft 1.20.1/Fabric
-Loader 0.16.0. O downloader verifica tamanho e SHA-256, usa arquivos `.part`
-para retomada e troca o destino somente depois de uma transferência válida.
+Loader 0.16.0. O downloader valida a resposta, calcula e registra tamanho e
+SHA-256 no estado, usa arquivos `.part` para retomada e troca o destino somente
+depois de uma transferência completa. Como o manifest atual não traz hashes
+esperados por arquivo, o digest registrado é evidência local, não uma
+verificação independente de autenticidade.
 
 ## Estrutura do projeto
 
@@ -81,8 +85,9 @@ para retomada e troca o destino somente depois de uma transferência válida.
 
 - **Falha no download:** execute novamente; arquivos `.part` permitem retomar
   transferências interrompidas e retries tratam falhas transitórias.
-- **Arquivo inválido:** confirme a conectividade e o SHA-256 esperado no
-  manifest; o arquivo antigo não é substituído por conteúdo incompleto.
+- **Arquivo incompleto:** confirme a conectividade e o tamanho recebido; o
+  arquivo antigo não é substituído por conteúdo incompleto e o digest recebido
+  fica registrado no estado local.
 - **Perfil não aparece:** confirme que o Launcher estava fechado durante a
   alteração e verifique o backup `launcher_profiles.json.aof7-backup`.
 - **Receita não aparece:** confirme que o servidor carregou os overrides KubeJS

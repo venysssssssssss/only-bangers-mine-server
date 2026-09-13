@@ -21,14 +21,16 @@ instância do Minecraft, ou publicar dados privados junto do projeto.
 | Caminho escapando da instância | `safe_join` rejeita path traversal. |
 | Transporte inseguro | O manifest real exige URLs HTTPS. |
 | Credencial vazando na URL | URLs com usuário ou senha são rejeitadas. |
-| Download alterado/incompleto | Tamanho e SHA-256 são conferidos. |
+| Download incompleto | O tamanho recebido é conferido quando a resposta informa `Content-Length`; o SHA-256 recebido é registrado no estado. |
 | Interrupção no meio da gravação | Download ocorre em `.part` e só depois é promovido. |
 | Perda de arquivo válido | Falha de substituição preserva o destino anterior. |
 | Perda de perfil do Launcher | Mesclagem cria `launcher_profiles.json.aof7-backup`. |
 | Diagnóstico indisponível | Bootstrap grava transcript em `logs\\install.log`. |
 
 Esses controles protegem o fluxo de instalação; eles não transformam hosts
-externos em fontes automaticamente confiáveis. Uma mudança de URL ou hash deve
+externos em fontes automaticamente confiáveis. O manifest atual não contém
+hashes esperados por arquivo, então o digest salvo no estado é auditoria local,
+não uma prova independente de autenticidade. Uma mudança de URL ou hash deve
 ser revisada como mudança de supply chain.
 
 ## Dados que nunca devem ser publicados
@@ -47,7 +49,7 @@ ser revisada como mudança de supply chain.
 1. Leia `git status --short --ignored`.
 2. Revise `git diff --cached --name-only`.
 3. Procure manualmente por segredos em arquivos novos e alterados.
-4. Confirme URLs HTTPS e hashes do manifest.
+4. Confirme URLs HTTPS e os metadados disponíveis no manifest.
 5. Rode a suíte de testes e o self-test do instalador.
 6. Confirme que o arquivo grande e os logs continuam ignorados.
 
@@ -57,6 +59,7 @@ o texto de um commit posterior não invalida o segredo já exposto.
 ## Limites conhecidos
 
 - O projeto não assina os manifests nem verifica assinatura de metadata externa.
-- A confiança no SHA-256 depende da origem do hash no manifest.
+- O SHA-256 salvo no estado depende dos bytes recebidos; o manifest ainda não
+  fornece um hash esperado para comparação independente.
 - O transcript local pode conter detalhes úteis para diagnóstico; por isso ele
   é ignorado e não deve ser anexado publicamente sem revisão.

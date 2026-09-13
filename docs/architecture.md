@@ -59,12 +59,12 @@ sequenceDiagram
     B->>B: Seleciona Python embutido e inicia transcript
     B->>I: Repassa argumentos
     I->>M: Carrega versões e entries
-    M-->>I: URLs, caminhos, tamanhos e SHA-256
+    M-->>I: URLs, caminhos e versões
     I->>I: Valida HTTPS, host, caminho e versão
     loop Cada arquivo
         I->>H: GET do arquivo ou Range após .part
         H-->>I: Bytes
-        I->>I: Compara tamanho e SHA-256
+        I->>I: Confere tamanho recebido e calcula SHA-256
         I->>O: Renomeia .part para o destino validado
     end
     I->>O: Grava estado da instalação
@@ -73,8 +73,10 @@ sequenceDiagram
     B->>B: Fecha transcript
 ```
 
-O destino só é substituído depois que o conteúdo recebido passa pelas
-verificações. Isso permite repetir a instalação sem destruir um arquivo válido.
+O destino só é substituído depois que a resposta termina conforme o tamanho
+declarado quando esse cabeçalho existe. O SHA-256 é registrado no estado local;
+o manifest atual não fornece um digest esperado para rejeição independente.
+Isso permite repetir a instalação sem destruir um arquivo válido.
 
 ## 3. Falhas, retry e retomada
 
@@ -93,9 +95,7 @@ flowchart TD
     Retry -- Não --> Cleanup[Remove .part incompleto]
     Cleanup --> Fail[Erro sem substituir destino antigo]
     Response -- Sim --> Hash[Calcula tamanho e SHA-256]
-    Hash --> Match{Valores conferem?}
-    Match -- Não --> Cleanup
-    Match -- Sim --> Atomic[Move .part para o destino]
+    Hash --> Atomic[Move .part para o destino]
     Atomic --> State[Atualiza estado]
     Skip --> State
     State --> Done[Próximo arquivo]
@@ -123,7 +123,7 @@ flowchart LR
         Traversal[path traversal]
         Insecure[URL não HTTPS]
         Credentials[Credenciais embutidas na URL]
-        HashMismatch[Hash/tamanho divergente]
+        HashMismatch[Resposta curta]
     end
 
     Cli --> Validate
@@ -132,15 +132,18 @@ flowchart LR
     Validate -. rejeita .-> Insecure
     Validate -. rejeita .-> Credentials
     URL --> Payload --> Download
-    Download -->|SHA-256 + tamanho conferem| State
-    Download -. falha .-> HashMismatch
+    Download -->|resposta completa| State
+    Download -. resposta curta .-> HashMismatch
 ```
 
 Controles importantes:
 
 - `safe_join` impede que o caminho de uma entry escape do diretório de saída.
 - URLs com esquema inseguro ou credenciais são rejeitadas antes do download.
-- SHA-256 e tamanho impedem que uma resposta incorreta seja promovida.
+- O tamanho da resposta detecta downloads curtos; o SHA-256 recebido é
+  registrado no estado para auditoria local.
+- O manifest atual não contém hashes esperados, portanto o digest não é uma
+  prova independente de autenticidade.
 - A gravação usa arquivo temporário e substituição atômica.
 - O perfil existente do Launcher recebe backup antes da mesclagem.
 

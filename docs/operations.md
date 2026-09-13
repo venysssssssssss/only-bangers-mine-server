@@ -21,7 +21,7 @@ dependências de terceiros para executar o kit.
    ```
 
 4. Aguarde a validação e os downloads.
-5. Abra o perfil `AOF7-2.5.3` no Launcher.
+5. Abra o perfil `AOF7 2.5.3` no Launcher (chave interna `aof7-2.5.3`).
 6. Se o servidor iniciar com overrides, confira os logs do servidor para
    confirmar que o KubeJS carregou as receitas esperadas.
 
@@ -77,7 +77,8 @@ isso pode remover perfis válidos do usuário.
 ## Atualizar o pack
 
 1. Altere somente as entries necessárias em `windows-kit/manifest.json`.
-2. Confirme Minecraft, Fabric Loader, URL HTTPS, caminho, tamanho e SHA-256.
+2. Confirme Minecraft, Fabric Loader, URL HTTPS e caminho; o instalador
+   registra tamanho e SHA-256 recebidos no estado local.
 3. Atualize overrides em `windows-kit/overrides/` somente quando a mudança
    de jogo exigir.
 4. Rode:
@@ -95,7 +96,7 @@ isso pode remover perfis válidos do usuário.
 | --- | --- | --- |
 | Manifest rejeitado | Versão, URL ou caminho inválido | Corrigir a entry e rodar `--check-only`. |
 | Download interrompido | Rede, espaço ou resposta transitória | Reexecutar e aproveitar `.part`. |
-| Hash divergente | Fonte mudou ou arquivo foi alterado | Não aceitar o arquivo; confirmar a fonte e atualizar o manifest conscientemente. |
+| Resposta curta | Fonte ou rede interrompeu o download | Não aceitar o arquivo; repetir a instalação e confirmar a fonte. |
 | Perfil ausente | Launcher aberto ou diretório incorreto | Fechar Launcher, conferir backup e repetir. |
 | Receita ausente | Override não carregado | Conferir instância, logs do servidor e nome do script KubeJS. |
 | Teste falhando | Regressão no instalador ou fixture | Ler o teste específico antes de alterar o código. |

@@ -333,7 +333,8 @@ def merge_launcher_profile(
         except (OSError, json.JSONDecodeError) as exc:
             raise ValueError(f"cannot read launcher profile: {exc}") from exc
         backup = profile_path.with_suffix(".json.aof7-backup")
-        shutil.copy2(profile_path, backup)
+        if not backup.exists():
+            shutil.copy2(profile_path, backup)
     else:
         data = {}
     if not isinstance(data, dict):

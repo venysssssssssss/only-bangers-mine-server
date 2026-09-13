@@ -280,6 +280,14 @@ class LauncherProfileTests(unittest.TestCase):
         merge_launcher_profile(profile_path, self.tempdir / "AOF7-2.5.3")
         self.assertTrue(profile_path.with_suffix(".json.aof7-backup").exists())
 
+    def test_profile_write_preserves_existing_backup(self):
+        profile_path = self.tempdir / "launcher_profiles.json"
+        backup_path = profile_path.with_suffix(".json.aof7-backup")
+        profile_path.write_text('{"profiles": {}}', encoding="utf-8")
+        backup_path.write_text("original backup", encoding="utf-8")
+        merge_launcher_profile(profile_path, self.tempdir / "AOF7-2.5.3")
+        self.assertEqual(backup_path.read_text(encoding="utf-8"), "original backup")
+
 
 class RealPackTests(unittest.TestCase):
     def test_real_pack_manifest_is_complete(self):

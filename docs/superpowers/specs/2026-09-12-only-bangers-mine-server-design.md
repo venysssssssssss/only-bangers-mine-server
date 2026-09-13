@@ -14,7 +14,7 @@ claro como instalar, operar, validar e evoluir o kit AOF7.
 - Criar o repositório público via `gh`, conectar o remoto e publicar a branch principal.
 - Documentar o projeto em português, mantendo nomes de comandos, arquivos e APIs originais.
 - Explicar a arquitetura existente com diagramas Mermaid nativos do GitHub.
-- Registrar instalação Windows, manifest, downloads, retomada, retries, validação SHA-256, perfis do Minecraft Launcher, overrides KubeJS, testes e troubleshooting.
+- Registrar instalação Windows, manifest, downloads, retomada, retries, cálculo/registro SHA-256, perfis do Minecraft Launcher, overrides KubeJS, testes e troubleshooting.
 
 ## Fora do escopo
 
@@ -37,7 +37,7 @@ claro como instalar, operar, validar e evoluir o kit AOF7.
 ### Componentes
 
 - **Bootstrap PowerShell/CMD:** entrada Windows, escolha de Python embutido, parâmetros e transcript de diagnóstico.
-- **Instalador Python:** carrega o manifest, valida URLs/caminhos, baixa arquivos com retry e resume, verifica hashes e escreve estado.
+- **Instalador Python:** carrega o manifest, valida URLs/caminhos, baixa arquivos com retry e resume, calcula hashes para o estado e escreve o resultado.
 - **Manifest:** fonte declarativa das versões Minecraft/Fabric e dos arquivos do modpack.
 - **Diretório de saída:** instância isolada AOF7 com mods, overrides e estado de downloads.
 - **Minecraft Launcher:** recebe ou preserva perfis existentes e aponta para a instância isolada.

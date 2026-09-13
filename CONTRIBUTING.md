@@ -34,7 +34,7 @@ Toda alteração em `windows-kit/manifest.json` deve manter:
 - Minecraft 1.20.1 e Fabric Loader 0.16.0, salvo mudança deliberada de versão;
 - URLs HTTPS sem credenciais embutidas;
 - caminhos relativos dentro da instância;
-- tamanho e SHA-256 correspondentes ao arquivo publicado;
+- tamanho e SHA-256 registrados no estado, quando o fluxo de download for alterado;
 - testes atualizados quando o comportamento do downloader mudar.
 
 ## Estilo de commits
