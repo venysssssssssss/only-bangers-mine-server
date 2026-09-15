@@ -19,7 +19,7 @@ verificável, autenticação offline, túnel Playit e observabilidade via Spark.
 - **Saúde observada:** TPS próximo de 20, heap Java de 6 GB e CPU do processo
   em torno de 2–5% durante a auditoria de 15/09/2026.
 
-O servidor ativo fica em um Dell OptiPlex 7050 com Ubuntu 26.04.1 LTS e quatro
+O servidor ativo fica com Ubuntu 26.04.1 LTS e quatro
 CPUs. A unidade systemd executa o jar Fabric 1.20.1; o caminho IPv6 passa por um
 proxy de loopback antes de chegar ao processo Java.
 
