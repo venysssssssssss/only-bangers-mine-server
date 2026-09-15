@@ -146,12 +146,13 @@
   Separar spec/asset, documentação e higiene/publicação; nunca stagear ZIP,
   banco, log, cache, estado ou jar grande.
 
-- [ ] **Step 5: Configurar e publicar via gh**
+- [x] **Step 5: Configurar e publicar via gh**
 
   Confirmar `gh --version` e `gh auth status` no host remoto. Se o login web
   continuar bloqueado, o usuário deve autenticar
   manualmente no host ou liberar egress para `github.com`; então fazer push da
   branch e abrir PR contra `main`. Não fazer push direto em `main`.
+  PR aberto: https://github.com/venysssssssssss/only-bangers-mine-server/pull/1
 
 - [ ] **Step 6: Emitir narrativa final**
 
