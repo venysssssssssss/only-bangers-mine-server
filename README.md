@@ -34,6 +34,10 @@ proxy de loopback antes de chegar ao processo Java.
 EMI substitui JEI no cliente. EasyAuth e SkinRestorer são server-only; não
 copie banco, mundo, `server.properties` ou credenciais para o cliente.
 
+O clone público contém script, manifesto e hashes. Os jars do cliente ficam
+fora do Git por tamanho; o pacote completo precisa ser fornecido como artefato
+de release pelo mantenedor.
+
 ## O que existe no projeto
 
 | Caminho | Papel |

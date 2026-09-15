@@ -42,7 +42,10 @@ Instale normalmente. No TLauncher, selecione o executável Java 21 se ele não d
 
 ## 3. Instalar o pack
 
-Extraia `dist/OnlyBangers-Windows-Setup.zip` no Windows. A pasta precisa conter:
+Obtenha o pacote completo `OnlyBangers-Windows-Setup.zip` como artefato de
+release do mantenedor e extraia-o no Windows. O ZIP e os jars não entram no
+Git público por tamanho; script e manifesto no clone, sozinhos, não contêm os
+52 arquivos necessários. A pasta precisa conter:
 
 ```text
 OnlyBangers-Windows-Setup/
