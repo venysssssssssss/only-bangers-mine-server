@@ -12,7 +12,7 @@ offline como identidade Mojang.
 | Risco | Controle observado |
 | --- | --- |
 | RCON exposto | Listener limitado a `127.0.0.1:25575`. |
-| Processo privilegiado | systemd usa usuário `venys1`, `NoNewPrivileges` e `PrivateTmp`. |
+| Processo privilegiado | systemd usa usuário dedicado, `NoNewPrivileges` e `PrivateTmp`. |
 | Escrita ampla | `UMask=0077`; arquivos de estado ficam privados. |
 | Acesso público | Jogo passa por Playit/IPv6; administração não usa a porta do jogo. |
 | Contas offline | EasyAuth exige `/register` e `/login`; senha deve ser exclusiva. |
@@ -25,8 +25,8 @@ identidade forte. EasyAuth precisa permanecer server-only. Nunca publique
 ## Controles do kit Windows
 
 - Manifesto cliente fixa Minecraft 1.20.1 e Fabric Loader 0.19.5.
-- Script exige Java 21 x64 e valida SHA-512 de cada um dos 52 jars.
-- JEI e EasyAuth são rejeitados no conjunto cliente.
+- Script exige Java 21 x64 e valida SHA-512 de cada um dos 51 jars.
+- Manifesto não inclui JEI, EasyAuth ou SkinRestorer; o script rejeita JEI e EasyAuth.
 - O instalador legado rejeita URLs não HTTPS, credenciais em URL e path
   traversal; baixa em `.part` e promove arquivo completo atomicamente.
 - Perfil do Launcher recebe backup antes de mesclagem.

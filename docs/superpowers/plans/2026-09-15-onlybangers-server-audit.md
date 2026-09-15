@@ -34,8 +34,8 @@
 
 - [x] **Step 1: Copiar o ícone existente do host**
 
-  Usar `scp` somente para `/home/venys1/minecraft/server/server-icon.png` e
-  salvar em `docs/assets/server-icon.png`; não copiar o diretório `world`.
+  Copiar somente o `server-icon.png` existente no host e salvar em
+  `docs/assets/server-icon.png`; não copiar o diretório `world`.
 
 - [x] **Step 2: Validar asset**
 
@@ -148,8 +148,8 @@
 
 - [ ] **Step 5: Configurar e publicar via gh**
 
-  Confirmar `/home/venys1/.local/bin/gh --version` e `gh auth status` em
-  `kali-server2`. Se o login web continuar bloqueado, o usuário deve autenticar
+  Confirmar `gh --version` e `gh auth status` no host remoto. Se o login web
+  continuar bloqueado, o usuário deve autenticar
   manualmente no host ou liberar egress para `github.com`; então fazer push da
   branch e abrir PR contra `main`. Não fazer push direto em `main`.
 

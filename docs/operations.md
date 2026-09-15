@@ -40,8 +40,7 @@ loopback → Java Fabric.
 ```bash
 systemctl is-active minecraft.service minecraft-ipv6-proxy.service playit.service
 ss -lntup
-tail -n 80 /home/venys1/minecraft/server/logs/health.log
-tail -n 80 /home/venys1/minecraft/server/logs/latest.log
+journalctl -u minecraft.service -n 80 --no-pager
 ```
 
 Confirme que o jogo está limitado ao caminho esperado, que RCON continua em
@@ -70,7 +69,7 @@ credenciais RCON para o cliente ou para o repositório.
 1. Instale Java 21 x64.
 2. Crie uma instância Fabric 1.20.1 com Loader 0.19.5.
 3. Extraia o setup e rode primeiro `Install-OnlyBangers.ps1 -CheckOnly`.
-4. Rode o script normal; ele valida 52 jars e SHA-512 antes de copiar.
+4. Rode o script normal; ele valida 51 jars e SHA-512 antes de copiar.
 5. Entre pelo endereço Playit e autentique com EasyAuth.
 
 Detalhes, erros comuns e separação cliente/servidor estão em
@@ -120,7 +119,7 @@ pack atual; SkinRestorer permanece no servidor.
 | IPv6 falha | `ss -lntup` | Confirmar proxy e porta 25565. |
 | Login falha | `latest.log` + EasyAuth | Repetir `/register` ou `/login`; não apagar banco. |
 | TPS cai | Spark health/profiler | Identificar chunk generation, entidades ou Create antes de mudar mods. |
-| Cliente fecha | `Install-OnlyBangers.ps1 -CheckOnly` | Confirmar Java 21, Loader 0.19.5 e 52 hashes. |
+| Cliente fecha | `Install-OnlyBangers.ps1 -CheckOnly` | Confirmar Java 21, Loader 0.19.5 e 51 hashes. |
 | Unidade cita 1.21.1 | `systemctl cat minecraft.service` | Planejar reconciliação; não alterar live às cegas. |
 
 ## Kit AOF7 legado

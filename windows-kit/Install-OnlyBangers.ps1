@@ -61,6 +61,11 @@ $JavaVersion = (& $Java.Source -version 2>&1 | Select-Object -First 1)
 if ($JavaVersion -notmatch '"21(?:\.|")') {
     throw "Java 21 obrigatório. Encontrado: $JavaVersion"
 }
+$JavaArch = (& $Java.Source -XshowSettings:properties -version 2>&1 |
+    Select-String "sun.arch.data.model" | Out-String)
+if ($JavaArch -notmatch "sun.arch.data.model\s*=\s*64") {
+    throw "Java 64-bit obrigatório. Encontrado: $JavaArch"
+}
 
 if ([string]::IsNullOrWhiteSpace($Target)) {
     $Target = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "OnlyBangers-1.20.1"

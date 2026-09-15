@@ -8,7 +8,7 @@ somente leitura.
 
 ```mermaid
 flowchart LR
-    Client[Cliente Fabric 1.20.1<br/>TLauncher + 52 mods]
+    Client[Cliente Fabric 1.20.1<br/>TLauncher + 51 mods]
     Playit[Playit<br/>schmidt-flowers.tun.ply.gg:60986]
     IPv6[IPv6 direto<br/>porta 25565]
     Proxy[systemd-socket-proxyd<br/>IPv6 → 127.0.0.1:25565]
@@ -34,7 +34,7 @@ IPv6 direto chega ao proxy de loopback. RCON não fica exposto na Internet.
 
 | Componente | Responsabilidade | Limite |
 | --- | --- | --- |
-| TLauncher/Fabric | Inicia cliente compatível e carrega os 52 jars. | Não recebe EasyAuth, RCON, mundo ou configs server-only. |
+| TLauncher/Fabric | Inicia cliente compatível e carrega os 51 jars. | Não recebe EasyAuth, RCON, mundo ou configs server-only. |
 | Playit | Encaminha entrada pública até o host. | Não substitui autenticação do jogo. |
 | IPv6 proxy | Encaminha IPv6 para loopback IPv4 do Java. | Não é servidor Minecraft nem banco. |
 | Fabric/Java | Executa gameplay, rede, mods e mundo. | Não expõe RCON publicamente. |
@@ -75,7 +75,7 @@ flowchart LR
     User[Usuário Windows] --> PS[Install-OnlyBangers.ps1]
     PS --> Manifest[onlybangers-client-manifest.json]
     PS --> Hash[SHA-512 + Java 21 + versões]
-    Manifest --> Copy[52 jars cliente]
+    Manifest --> Copy[51 jars cliente]
     Hash --> Copy
     Copy --> Instance[OnlyBangers-1.20.1]
     Instance --> Client

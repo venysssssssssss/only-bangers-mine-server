@@ -14,7 +14,7 @@ O servidor live roda como serviço systemd em Linux, com Java 21 e Fabric
 - Java: **Temurin/OpenJDK 21 x64**
 - Servidor Playit: `schmidt-flowers.tun.ply.gg:60986`
 - Alternativa IPv6 direta: `[2804:14c:b531:81ef:4a4d:7eff:fefc:2587]:25565`
-- Mods no cliente: 52 jars do manifesto `windows-kit/onlybangers-client-manifest.json`
+- Mods no cliente: 51 jars do manifesto `windows-kit/onlybangers-client-manifest.json`
 - JEI: removido; o substituto é EMI
 - EasyAuth: servidor-only; não copiar para o cliente
 - SkinRestorer: já funciona no servidor; não exige mod adicional no cliente
@@ -45,7 +45,7 @@ Instale normalmente. No TLauncher, selecione o executável Java 21 se ele não d
 Obtenha o pacote completo `OnlyBangers-Windows-Setup.zip` como artefato de
 release do mantenedor e extraia-o no Windows. O ZIP e os jars não entram no
 Git público por tamanho; script e manifesto no clone, sozinhos, não contêm os
-52 arquivos necessários. A pasta precisa conter:
+51 arquivos necessários. A pasta precisa conter:
 
 ```text
 OnlyBangers-Windows-Setup/
@@ -62,7 +62,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\Install-OnlyBangers.ps1
 ```
 
-O primeiro comando verifica Java, versões, presença dos 52 jars e SHA-512. O segundo copia tudo para `Documents\OnlyBangers-1.20.1\mods`.
+O primeiro comando verifica Java, versões, presença dos 51 jars e SHA-512. O segundo copia tudo para `Documents\OnlyBangers-1.20.1\mods`.
 
 Se já houver jars nessa pasta, o instalador move-os para um backup com timestamp antes de copiar o pack novo.
 
@@ -145,4 +145,4 @@ Nunca copie do servidor para o cliente:
 
 ## 8. Verificação de sucesso
 
-Instalação correta = script mostra `OK: 52 mods verificados`, TLauncher inicia Fabric 1.20.1, menu EMI aparece e conexão chega ao EasyAuth.
+Instalação correta = script mostra `OK: 51 mods verificados`, TLauncher inicia Fabric 1.20.1, menu EMI aparece e conexão chega ao EasyAuth.

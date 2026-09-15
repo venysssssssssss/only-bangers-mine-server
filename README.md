@@ -27,7 +27,7 @@ proxy de loopback antes de chegar ao processo Java.
 
 1. Siga o [setup Windows + TLauncher](docs/SETUP-WINDOWS-TLAUNCHER.md).
 2. Use Fabric 1.20.1 com Loader 0.19.5 e Java 21 x64.
-3. Instale os 52 mods do manifesto cliente.
+3. Instale os 51 mods do manifesto cliente.
 4. Adicione `schmidt-flowers.tun.ply.gg:60986` no multiplayer.
 5. Primeiro acesso: `/register SUA_SENHA SUA_SENHA`; depois: `/login SUA_SENHA`.
 
@@ -43,7 +43,7 @@ de release pelo mantenedor.
 | Caminho | Papel |
 | --- | --- |
 | `windows-kit/Install-OnlyBangers.ps1` | Verifica Java, versões, jars e SHA-512. |
-| `windows-kit/onlybangers-client-manifest.json` | Manifesto atual dos 52 mods cliente. |
+| `windows-kit/onlybangers-client-manifest.json` | Manifesto atual dos 51 mods cliente. |
 | `windows-kit/client-mods/` | Jars locais do pacote; não entram no release público. |
 | `windows-kit/` | Kit AOF7 legado e overrides históricos do instalador. |
 | `tests/` | Testes do instalador legado e contrato do kit atual. |

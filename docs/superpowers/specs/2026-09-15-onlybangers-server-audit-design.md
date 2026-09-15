@@ -3,7 +3,7 @@
 ## Objetivo
 
 Alinhar documentação e README ao servidor OnlyBangers realmente ativo, usando
-evidências do repositório e de `venys1@kali-server2`. O host Minecraft não será
+evidências do repositório e do host Minecraft. O host não será
 alterado; somente o GitHub CLI pode ser instalado/autenticado no diretório do
 usuário para permitir publicação.
 
@@ -30,7 +30,7 @@ usuário para permitir publicação.
   seria apropriado para painel, chat ou monitoramento em navegador.
 - Nenhuma foto física foi encontrada. O README usa o `server-icon.png` real e
   o identifica como ícone, não como fotografia do hardware.
-- `gh` não existia no host; foi instalado user-local em `/home/venys1/.local`.
+- `gh` não existia no host; foi instalado no espaço do usuário.
   O login web falhou porque o host não alcançou `github.com`; autenticação ainda
   depende de ação manual do usuário ou correção de egress.
 - Tailscale, IDs de máquina, logs, banco EasyAuth, RCON e credenciais não entram

@@ -21,7 +21,7 @@ preservar o histórico técnico do downloader.
 
 Ficam fora do Git regular:
 
-- `mine server (1).zip` e `mine server - venys1 skin.zip`;
+- ZIPs locais do servidor e variantes de skin;
 - `dist/OnlyBangers-Windows-Setup.zip` e sua pasta expandida;
 - `windows-kit/client-mods/` com jars do cliente;
 - logs, mundo, EasyAuth, backups, caches, `.part` e perfis locais;
@@ -37,10 +37,10 @@ de distribuição, e permanecem versionados quando já fazem parte do fluxo.
 
 ## GitHub CLI no host remoto
 
-O host `kali-server2` não possuía `gh`; a versão 2.46.0 foi instalada sem sudo
-em `/home/venys1/.local/bin/gh`. O login web precisa ser concluído no próprio
-host quando o acesso a `github.com` estiver disponível. O token local não é
-copiado nem gravado no repositório.
+O host remoto não possuía `gh`; a versão 2.46.0 foi instalada no espaço do
+usuário, sem sudo. O login web precisa ser concluído no próprio host quando o
+acesso a `github.com` estiver disponível. O token local não é copiado nem
+gravado no repositório.
 
 ## Auditoria antes de cada commit
 

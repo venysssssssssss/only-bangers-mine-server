@@ -31,10 +31,25 @@ class WindowsSetupContractTests(unittest.TestCase):
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
         self.assertEqual(manifest["minecraft"], "1.20.1")
         self.assertEqual(manifest["fabric_loader"], "0.19.5")
-        self.assertEqual(len(manifest["mods"]), 52)
+        self.assertEqual(len(manifest["mods"]), 51)
         for mod in manifest["mods"]:
             self.assertRegex(mod["sha512"], r"^[0-9a-f]{128}$")
             self.assertTrue(mod["file"].endswith(".jar"))
+
+
+class ReviewContractTests(unittest.TestCase):
+    def test_installer_requires_64_bit_java(self):
+        script = (ROOT / "windows-kit" / "Install-OnlyBangers.ps1").read_text()
+        self.assertIn("-XshowSettings:properties", script)
+        self.assertIn('Select-String "sun.arch.data.model"', script)
+        self.assertIn("sun.arch.data.model\\s*=\\s*64", script)
+
+    def test_current_client_manifest_excludes_server_only_skinrestorer(self):
+        manifest = json.loads(
+            (ROOT / "windows-kit" / "onlybangers-client-manifest.json").read_text()
+        )
+        mod_ids = {item["id"].lower() for item in manifest["mods"]}
+        self.assertFalse(any("skinrestorer" in mod_id for mod_id in mod_ids))
 
 
 if __name__ == "__main__":
