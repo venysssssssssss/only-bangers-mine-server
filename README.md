@@ -1,23 +1,82 @@
-# AOF7 Windows Kit
+# OnlyBangers Minecraft Server
 
-Kit de instalação e distribuição de uma instância Minecraft 1.20.1 com Fabric
-Loader 0.16.0, mods declarados em manifest, overrides KubeJS e testes de
-integridade do instalador.
+Servidor Minecraft Fabric 1.20.1 mantido em Linux, com cliente Windows
+reprodutível, autenticação offline, túnel Playit e observabilidade via Spark.
 
-O projeto foi pensado para Windows: o usuário inicia pelo bootstrap CMD ou
-PowerShell, o instalador Python valida o manifest, baixa os arquivos com
-retomada e registro de hashes, prepara uma instância isolada e preserva os perfis já
-existentes do Minecraft Launcher.
+![Ícone do servidor OnlyBangers](docs/assets/server-icon.png)
 
-## Começo rápido
+> O arquivo acima é o ícone real do servidor, não uma foto do hardware.
 
-1. Baixe ou clone este repositório em uma máquina Windows.
-2. Execute `windows-kit/Install-AOF7.cmd`.
-3. Abra o perfil `AOF7 2.5.3` criado no Minecraft Launcher (chave interna
-   `aof7-2.5.3`).
-4. Se precisar investigar uma instalação, consulte `logs\\install.log`.
+## Visão rápida
 
-Para validar um manifest pequeno sem baixar o pack real:
+- **Minecraft:** 1.20.1
+- **Fabric Loader:** 0.19.5
+- **Java:** OpenJDK 21
+- **Acesso principal:** `schmidt-flowers.tun.ply.gg:60986`
+- **Acesso alternativo:** IPv6 direto na porta `25565`
+- **Autenticação:** EasyAuth com `online-mode=false`
+- **Administração:** RCON somente em `127.0.0.1:25575`
+- **Saúde observada:** TPS próximo de 20, heap Java de 6 GB e CPU do processo
+  em torno de 2–5% durante a auditoria de 15/09/2026.
+
+O servidor ativo fica em um Dell OptiPlex 7050 com Ubuntu 26.04.1 LTS e quatro
+CPUs. A unidade systemd executa o jar Fabric 1.20.1; o caminho IPv6 passa por um
+proxy de loopback antes de chegar ao processo Java.
+
+## Jogar
+
+1. Siga o [setup Windows + TLauncher](docs/SETUP-WINDOWS-TLAUNCHER.md).
+2. Use Fabric 1.20.1 com Loader 0.19.5 e Java 21 x64.
+3. Instale os 52 mods do manifesto cliente.
+4. Adicione `schmidt-flowers.tun.ply.gg:60986` no multiplayer.
+5. Primeiro acesso: `/register SUA_SENHA SUA_SENHA`; depois: `/login SUA_SENHA`.
+
+EMI substitui JEI no cliente. EasyAuth e SkinRestorer são server-only; não
+copie banco, mundo, `server.properties` ou credenciais para o cliente.
+
+## O que existe no projeto
+
+| Caminho | Papel |
+| --- | --- |
+| `windows-kit/Install-OnlyBangers.ps1` | Verifica Java, versões, jars e SHA-512. |
+| `windows-kit/onlybangers-client-manifest.json` | Manifesto atual dos 52 mods cliente. |
+| `windows-kit/client-mods/` | Jars locais do pacote; não entram no release público. |
+| `windows-kit/` | Kit AOF7 legado e overrides históricos do instalador. |
+| `tests/` | Testes do instalador legado e contrato do kit atual. |
+| `docs/` | Arquitetura, operação, segurança, setup e publicação. |
+
+## Mods e otimização
+
+O pack combina conteúdo e estabilidade. Create, Botania, Malum, TechReborn,
+IndustrialReborn, Hephaestus, Farmer's Delight, Vinery, AdventureZ,
+Supplementaries, Waystones e Sophisticated Backpacks formam o núcleo de
+gameplay. Terralith, Regions Unexplored, YUNG's Better Caves e Better Nether
+Fortresses ampliam worldgen.
+
+O caminho de performance usa C2ME para geração concorrente de chunks, Lithium
+para lógica do jogo, FerriteCore e ModernFix para memória/startup, Krypton e
+VMP para rede, ServerCore para ajustes de servidor e Ksyxis/LazyDFU para
+inicialização. Chunky ajuda na preparação de chunks; Spark mede o resultado;
+Fabric Carpet, Clumps e MemoryLeakFix completam as ferramentas de operação.
+
+Esses nomes descrevem função, não promessa de ganho fixo. A evidência live é o
+Spark: TPS próximo de 20 durante o snapshot.
+
+## Arquitetura e WebSocket
+
+O jogo mantém uma conexão TCP persistente com o servidor. O OnlyBangers não usa
+WebSocket: WebSocket seria outra opção, útil para um painel web, chat ou stream
+de métricas em navegador. A diferença e o caminho real estão em
+[Arquitetura e diagramas](docs/architecture.md).
+
+## Verificar o projeto
+
+```powershell
+python -m unittest discover -s tests -v
+python windows-kit/aof7_installer.py --self-test
+```
+
+Para validar o instalador sem baixar o pack legado:
 
 ```powershell
 python windows-kit/aof7_installer.py --check-only `
@@ -25,79 +84,19 @@ python windows-kit/aof7_installer.py --check-only `
   --output-root C:\AOF7-check
 ```
 
-O modo `--check-only` lê e valida as versões e entradas sem criar o diretório
-`mods` da instância.
-
-## Requisitos
-
-- Windows compatível com o bootstrap PowerShell/CMD do kit.
-- Acesso à rede para baixar os arquivos HTTPS declarados no manifest.
-- Minecraft Launcher instalado para usar o perfil gerado.
-- Permissão de escrita no diretório de instalação escolhido.
-
-O bootstrap carrega uma distribuição Python embutida adequada à arquitetura do
-Windows. Não é necessário instalar dependências Python de terceiros.
-
-## Verificações locais
-
-Executar a suíte de testes a partir da raiz:
-
-```powershell
-python -m unittest discover -s tests -v
-```
-
-Executar o self-test do instalador:
-
-```powershell
-python windows-kit/aof7_installer.py --self-test
-```
-
-O manifest completo contém 436 entradas HTTPS para Minecraft 1.20.1/Fabric
-Loader 0.16.0. O downloader valida a resposta, calcula e registra tamanho e
-SHA-256 no estado, usa arquivos `.part` para retomada e troca o destino somente
-depois de uma transferência completa. Como o manifest atual não traz hashes
-esperados por arquivo, o digest registrado é evidência local, não uma
-verificação independente de autenticidade.
-
-## Estrutura do projeto
-
-| Caminho | Responsabilidade |
-| --- | --- |
-| `windows-kit/Install-AOF7.cmd` | Entrada CMD e encaminhamento de argumentos. |
-| `windows-kit/Install-AOF7.ps1` | Bootstrap Windows, Python embutido e transcript. |
-| `windows-kit/aof7_installer.py` | Manifest, validação, download, estado e perfil do launcher. |
-| `windows-kit/manifest.json` | Versões do pack e arquivos distribuídos. |
-| `windows-kit/overrides/` | Conteúdo aplicado à instância, incluindo scripts KubeJS. |
-| `tests/` | Testes de segurança, download, bootstrap e integração de perfil. |
-| `dist/` | Pacote ZIP distribuível do Windows Kit. |
-| `docs/` | Arquitetura, operação, segurança e publicação. |
-
 ## Documentação
 
-- [Arquitetura e diagramas](docs/architecture.md)
-- [Operação, atualização e recuperação](docs/operations.md)
-- [Modelo de segurança](docs/security.md)
+- [Arquitetura, rede e diagramas Mermaid](docs/architecture.md)
+- [Operação, saúde, atualização e recuperação](docs/operations.md)
+- [Segurança do cliente e servidor](docs/security.md)
+- [Setup Windows + TLauncher](docs/SETUP-WINDOWS-TLAUNCHER.md)
 - [Contribuição](CONTRIBUTING.md)
 - [Relato de vulnerabilidades](SECURITY.md)
 - [Fronteira de publicação](docs/publication.md)
 
-## Troubleshooting rápido
+## Distribuição
 
-- **Falha no download:** execute novamente; arquivos `.part` permitem retomar
-  transferências interrompidas e retries tratam falhas transitórias.
-- **Arquivo incompleto:** confirme a conectividade e o tamanho recebido; o
-  arquivo antigo não é substituído por conteúdo incompleto e o digest recebido
-  fica registrado no estado local.
-- **Perfil não aparece:** confirme que o Launcher estava fechado durante a
-  alteração e verifique o backup `launcher_profiles.json.aof7-backup`.
-- **Receita não aparece:** confirme que o servidor carregou os overrides KubeJS
-  da instância correta e consulte os logs do servidor.
-
-Para o fluxo completo de diagnóstico, consulte
-[`docs/operations.md`](docs/operations.md).
-
-## Licença e distribuição
-
-Este repositório contém o kit e sua configuração; os mods e bibliotecas
-referenciados pelo manifest podem possuir licenças próprias. Verifique os
-termos de cada projeto antes de redistribuir o pacote fora deste uso.
+O repositório versiona scripts, manifestos, hashes, testes, overrides e
+documentação. ZIPs, jars grandes, logs, bancos, mundo e perfis pessoais ficam
+fora da publicação. Mods referenciados podem ter licenças próprias; confira os
+termos de cada projeto antes de redistribuir.

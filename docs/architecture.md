@@ -1,204 +1,162 @@
 # Arquitetura
 
-Este documento descreve o fluxo real do AOF7 Windows Kit. O projeto é um
-instalador local: não há API própria, banco de dados ou serviço intermediário.
-O manifest declara o que deve ser baixado; o instalador valida, materializa e
-registra a instância do Minecraft.
+Documento descreve duas camadas relacionadas: kit Windows do cliente e
+servidor OnlyBangers ativo. O snapshot live foi coletado em 15/09/2026 por SSH
+somente leitura.
 
-## 1. Visão geral dos componentes
+## 1. Topologia live
 
 ```mermaid
 flowchart LR
-    User[Usuário Windows]
-    Cmd[Install-AOF7.cmd]
-    Ps[Install-AOF7.ps1<br/>bootstrap + transcript]
-    Py[aof7_installer.py]
-    Manifest[manifest.json<br/>Minecraft 1.20.1<br/>Fabric 0.16.0]
-    Sources[URLs HTTPS dos arquivos]
-    Output[Instância AOF7 isolada<br/>mods + overrides + state]
-    Launcher[Minecraft Launcher<br/>launcher_profiles.json]
-    Server[Servidor Minecraft<br/>KubeJS carrega overrides]
-    Tests[tests/<br/>unittest]
+    Client[Cliente Fabric 1.20.1<br/>TLauncher + 52 mods]
+    Playit[Playit<br/>schmidt-flowers.tun.ply.gg:60986]
+    IPv6[IPv6 direto<br/>porta 25565]
+    Proxy[systemd-socket-proxyd<br/>IPv6 → 127.0.0.1:25565]
+    Java[Java 21<br/>Fabric 1.20.1 / Loader 0.19.5]
+    RCON[RCON<br/>127.0.0.1:25575]
+    Auth[EasyAuth<br/>contas offline]
+    World[world/ + configs + mods]
 
-    User --> Cmd --> Ps --> Py
-    Py --> Manifest
-    Manifest --> Sources
-    Sources --> Py
-    Py --> Output
-    Py --> Launcher
-    Output --> Launcher
-    Launcher --> Server
-    Tests -.verifica.-> Py
-    Tests -.verifica.-> Ps
+    Client -->|TCP persistente| Playit
+    Client -->|TCP IPv6| IPv6
+    Playit --> Proxy
+    IPv6 --> Proxy
+    Proxy --> Java
+    Java --> Auth
+    Java --> World
+    RCON --> Java
 ```
 
-### Responsabilidade de cada componente
+O processo Java escuta localmente. Playit fornece a entrada pública; o caminho
+IPv6 direto chega ao proxy de loopback. RCON não fica exposto na Internet.
 
-| Componente | Faz | Não faz |
+## 2. Componentes e limites
+
+| Componente | Responsabilidade | Limite |
 | --- | --- | --- |
-| `Install-AOF7.cmd` | Oferece uma entrada simples e repassa argumentos. | Não baixa arquivos nem interpreta o manifest. |
-| `Install-AOF7.ps1` | Prepara Python embutido, chama o instalador e grava `logs\\install.log`. | Não substitui a validação do instalador Python. |
-| `aof7_installer.py` | Valida entradas, baixa, verifica, grava estado e mescla o perfil. | Não é um servidor web nem gerencia contas do Minecraft. |
-| `manifest.json` | Declara versões e arquivos esperados. | Não executa código. |
-| `overrides/` | Fornece alterações da instância, como scripts KubeJS. | Não altera o código do instalador. |
-| `tests/` | Exercita segurança, downloads e bootstrap. | Não substitui uma instalação real no Windows. |
+| TLauncher/Fabric | Inicia cliente compatível e carrega os 52 jars. | Não recebe EasyAuth, RCON, mundo ou configs server-only. |
+| Playit | Encaminha entrada pública até o host. | Não substitui autenticação do jogo. |
+| IPv6 proxy | Encaminha IPv6 para loopback IPv4 do Java. | Não é servidor Minecraft nem banco. |
+| Fabric/Java | Executa gameplay, rede, mods e mundo. | Não expõe RCON publicamente. |
+| EasyAuth | Autentica jogadores em modo offline. | Não é conta Microsoft nem validação Mojang. |
+| Spark | Mede TPS, CPU, memória, rede e disco. | Mede estado; não corrige gargalos sozinho. |
+| Kit Windows | Valida versões, jars e SHA-512 antes de copiar cliente. | Não instala nem administra o servidor Linux. |
 
-## 2. Sequência de uma instalação normal
+## 3. Fluxo do cliente
 
 ```mermaid
 sequenceDiagram
-    actor U as Usuário
-    participant B as Bootstrap CMD/PowerShell
-    participant I as Instalador Python
-    participant M as Manifest
-    participant H as Hosts HTTPS
-    participant O as Diretório de saída
-    participant L as Minecraft Launcher
+    actor P as Jogador
+    participant C as Cliente Fabric
+    participant T as Playit ou IPv6
+    participant X as Proxy loopback
+    participant S as Java Fabric
+    participant A as EasyAuth
+    participant W as Mundo/mods
 
-    U->>B: Executa Install-AOF7.cmd
-    B->>B: Seleciona Python embutido e inicia transcript
-    B->>I: Repassa argumentos
-    I->>M: Carrega versões e entries
-    M-->>I: URLs, caminhos e versões
-    I->>I: Valida HTTPS, host, caminho e versão
-    loop Cada arquivo
-        I->>H: GET do arquivo ou Range após .part
-        H-->>I: Bytes
-        I->>I: Confere tamanho recebido e calcula SHA-256
-        I->>O: Renomeia .part para o destino validado
-    end
-    I->>O: Grava estado da instalação
-    I->>L: Faz backup e mescla perfil AOF7
-    L-->>U: Perfil isolado disponível
-    B->>B: Fecha transcript
+    P->>C: Inicia Minecraft 1.20.1
+    C->>T: Abre conexão TCP persistente
+    T->>X: Encaminha tráfego
+    X->>S: Entrega em 127.0.0.1:25565
+    S->>A: Solicita autenticação
+    A-->>P: /register ou /login
+    P->>S: Joga após autenticar
+    S->>W: Lê mundo e executa mods
 ```
 
-O destino só é substituído depois que a resposta termina conforme o tamanho
-declarado quando esse cabeçalho existe. O SHA-256 é registrado no estado local;
-o manifest atual não fornece um digest esperado para rejeição independente.
-Isso permite repetir a instalação sem destruir um arquivo válido.
+Minecraft não usa WebSocket nesta topologia. WebSocket manteria uma conexão
+bidirecional sobre HTTP para consumidores web; seria uma extensão possível para
+um painel de administração, não uma dependência do jogo atual.
 
-## 3. Falhas, retry e retomada
-
-```mermaid
-flowchart TD
-    Start[Arquivo necessário] --> Existing{Destino já está válido?}
-    Existing -- Sim --> Skip[Pula download]
-    Existing -- Não --> Part{Existe arquivo .part?}
-    Part -- Sim --> Range[Solicita bytes restantes com Range]
-    Part -- Não --> Full[Inicia download completo]
-    Range --> Response{Resposta válida?}
-    Full --> Response
-    Response -- Não/transitória --> Retry{Ainda há tentativas?}
-    Retry -- Sim --> Backoff[Tenta novamente]
-    Backoff --> Response
-    Retry -- Não --> Cleanup[Remove .part incompleto]
-    Cleanup --> Fail[Erro sem substituir destino antigo]
-    Response -- Sim --> Hash[Calcula tamanho e SHA-256]
-    Hash --> Atomic[Move .part para o destino]
-    Atomic --> State[Atualiza estado]
-    Skip --> State
-    State --> Done[Próximo arquivo]
-```
-
-O arquivo `.part` é temporário e não é um resultado publicável. Em uma falha
-definitiva, o arquivo anterior permanece intacto e a exceção torna o problema
-visível ao operador.
-
-## 4. Fronteiras de confiança e controles
+## 4. Kit Windows
 
 ```mermaid
 flowchart LR
-    subgraph Local[Máquina local confiável]
-        Cli[Argumentos e manifest local]
-        Validate[Validação de versão,<br/>URL e caminho]
-        Download[Downloader atômico]
-        State[Estado e perfil com backup]
-    end
-    subgraph Internet[Internet não confiável]
-        URL[Servidor de download]
-        Payload[Bytes recebidos]
-    end
-    subgraph Reject[Entradas rejeitadas]
-        Traversal[path traversal]
-        Insecure[URL não HTTPS]
-        Credentials[Credenciais embutidas na URL]
-        HashMismatch[Resposta curta]
-    end
-
-    Cli --> Validate
-    Validate -->|HTTPS + host sem credenciais| URL
-    Validate -. rejeita .-> Traversal
-    Validate -. rejeita .-> Insecure
-    Validate -. rejeita .-> Credentials
-    URL --> Payload --> Download
-    Download -->|resposta completa| State
-    Download -. resposta curta .-> HashMismatch
+    User[Usuário Windows] --> PS[Install-OnlyBangers.ps1]
+    PS --> Manifest[onlybangers-client-manifest.json]
+    PS --> Hash[SHA-512 + Java 21 + versões]
+    Manifest --> Copy[52 jars cliente]
+    Hash --> Copy
+    Copy --> Instance[OnlyBangers-1.20.1]
+    Instance --> Client
+    Client[Fabric/TLauncher] --> Server[Servidor live]
 ```
 
-Controles importantes:
+O instalador atual copia apenas os jars cliente e rejeita JEI/EasyAuth. O
+instalador AOF7 legado ainda existe em `windows-kit/` para preservar o fluxo
+histórico de download e testes de retomada; ele não define a versão live.
 
-- `safe_join` impede que o caminho de uma entry escape do diretório de saída.
-- URLs com esquema inseguro ou credenciais são rejeitadas antes do download.
-- O tamanho da resposta detecta downloads curtos; o SHA-256 recebido é
-  registrado no estado para auditoria local.
-- O manifest atual não contém hashes esperados, portanto o digest não é uma
-  prova independente de autenticidade.
-- A gravação usa arquivo temporário e substituição atômica.
-- O perfil existente do Launcher recebe backup antes da mesclagem.
-
-## 5. Ciclo de operação
+## 5. Download seguro do kit legado
 
 ```mermaid
-stateDiagram-v2
-    [*] --> Bootstrap
-    Bootstrap --> Validacao: argumentos e manifest
-    Validacao --> Download: entradas válidas
-    Download --> Instancia: arquivos verificados
-    Download --> Download: retry ou retomada
-    Download --> Diagnostico: falha definitiva
-    Instancia --> Launcher: perfil AOF7 isolado
-    Launcher --> Servidor: iniciar Minecraft
-    Servidor --> KubeJS: carregar overrides
-    KubeJS --> Jogabilidade: receitas e regras ativas
-    Jogabilidade --> Testes: validar mudança
-    Testes --> Validacao: novo manifest ou release
-    Diagnostico --> Bootstrap: corrigir ambiente e repetir
+flowchart TD
+    Start[Entry do manifest] --> Existing{Destino válido?}
+    Existing -- sim --> Skip[Pula download]
+    Existing -- não --> Part{Existe .part?}
+    Part -- sim --> Range[Retoma com Range]
+    Part -- não --> Full[Download completo]
+    Range --> Validate[Valida resposta e calcula SHA-256]
+    Full --> Validate
+    Validate -- falha --> Retry{Ainda há tentativas?}
+    Retry -- sim --> Backoff[Retry com espera]
+    Backoff --> Range
+    Retry -- não --> Fail[Preserva destino anterior]
+    Validate -- ok --> Atomic[Promove .part atomicamente]
+    Atomic --> State[Registra estado local]
+    Skip --> State
 ```
 
-O diretório de saída é a fronteira da instância. Os overrides KubeJS são
-carregados pelo servidor Minecraft durante o ciclo normal; eles não são
-executados pelo bootstrap nem pelo downloader.
+O manifest legado valida HTTPS, caminho relativo e versão. O SHA-256 gravado é
+evidência dos bytes recebidos; sem digest esperado no manifest, não é prova
+independente de autenticidade.
 
-## 6. Mapa de diretórios
+## 6. Otimização e observabilidade
+
+| Grupo | Mods | Função documentada |
+| --- | --- | --- |
+| Tick/game logic | Lithium, ModernFix, ServerCore | Reduzir trabalho repetido e melhorar estabilidade. |
+| Chunks/worldgen | C2ME, Chunky, Ksyxis, LazyDFU | Geração, preparação e inicialização mais previsíveis. |
+| Memória/startup | FerriteCore, ModernFix, MemoryLeakFix, Clumps | Reduzir custo de memória e ruído de inicialização. |
+| Rede | Krypton, VMP | Otimizar caminhos de rede do servidor. |
+| Medição | Spark, Fabric Carpet | Medir TPS e investigar gargalos. |
+
+Spark registrou TPS próximo de 20, CPU do processo em torno de 2–5% e heap
+entre 1.1 e 2.7 GB de 6 GB nos relatórios observados. Esses números são
+snapshot, não garantia de carga futura.
+
+## 7. Segurança e estado systemd
+
+```mermaid
+flowchart LR
+    Public[Internet / Playit / IPv6] -->|somente jogo| Proxy[Proxy]
+    Proxy -->|loopback| Java[Java Fabric]
+    Admin[SSH local autorizado] -->|RCON localhost| Java
+    Private[EasyAuth DB, mundo, logs, Tailscale] -. não publicar .-> Repo[GitHub público]
+```
+
+O serviço aplica `NoNewPrivileges=true`, `PrivateTmp=true`, `UMask=0077`,
+`LimitNOFILE=65536` e `OOMScoreAdjust=-800` no drop-in ativo. Foi encontrado
+um fragmento base que ainda cita jar 1.21.1, enquanto o drop-in executado cita
+1.20.1; systemd alerta que a unidade carregada está desatualizada. A correção
+deve ocorrer em janela operacional futura, com validação do arquivo efetivo;
+esta auditoria não alterou o host.
+
+## 8. Mapa do repositório
 
 ```mermaid
 flowchart TB
-    Root[Raiz do projeto]
-    Root --> Kit[windows-kit/]
-    Root --> Test[tests/]
-    Root --> Dist[dist/]
+    Root[Raiz]
     Root --> Docs[docs/]
-    Kit --> Entry[Install-AOF7.cmd + Install-AOF7.ps1]
-    Kit --> Installer[aof7_installer.py]
-    Kit --> Manifest[manifest.json]
-    Kit --> Overrides[overrides/]
-    Test --> Fixtures[fixtures/]
-    Test --> Suite[test_aof7_installer.py]
-    Dist --> Zip[AOF7-Windows-Kit-2.5.3.zip]
-    Docs --> Architecture[architecture.md]
-    Docs --> Operations[operations.md]
-    Docs --> Security[security.md]
+    Root --> Kit[windows-kit/]
+    Root --> Tests[tests/]
+    Root --> Dist[dist/]
+    Docs --> Current[architecture, operations, security, publication]
+    Docs --> Setup[SETUP-WINDOWS-TLAUNCHER.md]
+    Kit --> CurrentKit[Install-OnlyBangers.ps1 + manifest cliente]
+    Kit --> Legacy[Install-AOF7.* + aof7_installer.py + overrides]
+    Tests --> Contracts[Contratos do instalador e setup]
+    Dist --> Release[Artefatos locais; revisar antes de publicar]
 ```
 
-O manifest completo contém 436 entries; ele é uma fonte de dados e por isso
-fica agrupado no mapa em vez de ser expandido em um diagrama ilegível.
-
-## Decisões e limites
-
-- A arquitetura é local e orientada a arquivos; não há serviço central a
-  manter.
-- O retry é deliberadamente limitado ao downloader existente; observabilidade
-  detalhada de cada host ou uma fila distribuída não fazem parte do kit.
-- Mermaid foi escolhido porque é renderizado pelo GitHub e mantém os diagramas
-  revisáveis como texto.
+Mermaid fica inline para renderização nativa do GitHub. ZIPs, jars, logs,
+backups, bancos e mundo não fazem parte da fronteira pública.

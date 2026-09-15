@@ -27,15 +27,18 @@ python windows-kit/aof7_installer.py --check-only `
 
 Não use um diretório de instalação real para fixtures de teste.
 
-## Mudanças no manifest
+## Mudanças nos manifestos
 
-Toda alteração em `windows-kit/manifest.json` deve manter:
+Existem dois fluxos e eles não devem ser misturados:
 
-- Minecraft 1.20.1 e Fabric Loader 0.16.0, salvo mudança deliberada de versão;
-- URLs HTTPS sem credenciais embutidas;
-- caminhos relativos dentro da instância;
-- tamanho e SHA-256 registrados no estado, quando o fluxo de download for alterado;
-- testes atualizados quando o comportamento do downloader mudar.
+- `windows-kit/manifest.json`: kit AOF7 legado, Minecraft 1.20.1/Fabric Loader
+  0.16.0, coberto por `test_aof7_installer.py`;
+- `windows-kit/onlybangers-client-manifest.json`: cliente atual, Minecraft
+  1.20.1/Fabric Loader 0.19.5, 52 jars com SHA-512.
+
+Para ambos: mantenha caminhos relativos, não embuta credenciais e atualize os
+testes quando comportamento do instalador mudar. O downloader legado registra
+SHA-256 dos bytes recebidos; o kit atual compara SHA-512 declarado.
 
 ## Estilo de commits
 
@@ -47,6 +50,9 @@ Use o formato curto `tipo: resumo`, por exemplo:
 
 Commits devem ter uma intenção clara. Evite misturar refatoração sem relação,
 binários gigantes e mudanças de configuração pessoal.
+
+Mudanças no servidor live devem vir acompanhadas de versão, impacto operacional
+e evidência de saúde; esta documentação não autoriza alteração remota.
 
 ## Pull requests
 
