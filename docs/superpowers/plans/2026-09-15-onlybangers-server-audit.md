@@ -32,17 +32,17 @@
 - Consumes: snapshot SSH e decisões aprovadas.
 - Produces: spec, plano executável e asset visual pequeno.
 
-- [ ] **Step 1: Copiar o ícone existente do host**
+- [x] **Step 1: Copiar o ícone existente do host**
 
   Usar `scp` somente para `/home/venys1/minecraft/server/server-icon.png` e
   salvar em `docs/assets/server-icon.png`; não copiar o diretório `world`.
 
-- [ ] **Step 2: Validar asset**
+- [x] **Step 2: Validar asset**
 
   Confirmar que o arquivo é PNG e que o tamanho é pequeno o suficiente para
   documentação pública; a legenda deve dizer “ícone do servidor”.
 
-- [ ] **Step 3: Commitar spec, plano e asset**
+- [x] **Step 3: Commitar spec, plano e asset**
 
   Executar `git diff --check`, revisar nomes e commit `docs: define live server audit`.
 
@@ -56,26 +56,26 @@
 - Consumes: versões live, endpoint Playit, IPv6, serviço systemd, mods e métricas Spark.
 - Produces: entrada pública e diagramas coerentes com o caminho real.
 
-- [ ] **Step 1: Atualizar identidade do README**
+- [x] **Step 1: Atualizar identidade do README**
 
   Trocar foco AOF7 legado por OnlyBangers, mantendo links aos scripts existentes
   quando úteis e distinguindo o kit Windows do servidor live.
 
-- [ ] **Step 2: Adicionar conexão, mods e otimização**
+- [x] **Step 2: Adicionar conexão, mods e otimização**
 
   Explicar Playit, IPv6, EMI versus JEI, EasyAuth server-only, SkinRestorer e
   funções dos mods de performance sem alegar benchmark inexistente.
 
-- [ ] **Step 3: Adicionar o ícone com legenda honesta**
+- [x] **Step 3: Adicionar o ícone com legenda honesta**
 
   Referenciar `docs/assets/server-icon.png` no README; não chamá-lo de foto.
 
-- [ ] **Step 4: Substituir diagramas installer-only**
+- [x] **Step 4: Substituir diagramas installer-only**
 
   Manter o fluxo do instalador, mas incluir topologia live, proxy IPv6,
   loopback/RCON, fronteiras públicas/privadas e estado systemd.
 
-- [ ] **Step 5: Revisar nomes e links**
+- [x] **Step 5: Revisar nomes e links**
 
   Confirmar que cada caminho citado existe e que AOF7 aparece apenas onde
   descreve o instalador histórico ainda presente.
@@ -93,27 +93,27 @@
 - Consumes: README e arquitetura atualizados.
 - Produces: instruções reproduzíveis, limites de segurança e release limpo.
 
-- [ ] **Step 1: Documentar operação live**
+- [x] **Step 1: Documentar operação live**
 
   Registrar unidade systemd, JVM, porta, caminhos de conexão, Spark, recursos,
   backups e o alerta de fragmento 1.21.1 versus drop-in 1.20.1.
 
-- [ ] **Step 2: Documentar segurança real**
+- [x] **Step 2: Documentar segurança real**
 
   Explicar `online-mode=false` + EasyAuth, RCON local, rede pública, dados que
   ficam privados e necessidade de rotação se segredo for exposto.
 
-- [ ] **Step 3: Documentar mods por função**
+- [x] **Step 3: Documentar mods por função**
 
   Alinhar cliente/servidor, remover recomendações de JEI/EasyAuth no cliente e
   manter SkinRestorer como server-only.
 
-- [ ] **Step 4: Fechar fronteira pública**
+- [x] **Step 4: Fechar fronteira pública**
 
   Ignorar ZIPs e artefatos grandes não rastreados sem apagar cópias locais;
   manter scripts, manifest, hashes, docs e assets pequenos.
 
-- [ ] **Step 5: Revisar políticas históricas**
+- [x] **Step 5: Revisar políticas históricas**
 
   Atualizar apenas fatos operacionais atuais; preservar specs/plans anteriores.
 
@@ -126,22 +126,22 @@
 - Consumes: branch documentada e artefatos filtrados.
 - Produces: commit público e PR revisável.
 
-- [ ] **Step 1: Executar testes completos**
+- [x] **Step 1: Executar testes completos**
 
   Rodar `python -m unittest discover -s tests -v` e exigir código de saída zero;
   testes HTTP locais podem precisar de execução fora do sandbox restrito.
 
-- [ ] **Step 2: Executar self-test**
+- [x] **Step 2: Executar self-test**
 
   Rodar `python windows-kit/aof7_installer.py --self-test`.
 
-- [ ] **Step 3: Auditar conteúdo público**
+- [x] **Step 3: Auditar conteúdo público**
 
   Revisar `git status --short --ignored`, `git diff --cached --name-only`,
   `git diff --cached --stat`, `git diff --cached --check`, JSONs e padrões de
   segredo antes de cada commit.
 
-- [ ] **Step 4: Criar commits de intenção**
+- [x] **Step 4: Criar commits de intenção**
 
   Separar spec/asset, documentação e higiene/publicação; nunca stagear ZIP,
   banco, log, cache, estado ou jar grande.
