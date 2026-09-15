@@ -43,7 +43,7 @@ sem digest esperado externo, não é prova independente de supply chain.
 - `world/`, `server.properties`, backups e arquivos `.part`;
 - logs com nomes, UUIDs, caminhos pessoais ou mensagens privadas;
 - IPs Tailscale, machine ID, boot ID e configuração interna do host;
-- ZIPs e diretórios com jars grandes ou estado local;
+- ZIPs de distribuição e diretórios com jars grandes ou estado local;
 - metadados `.agents/`, `.codex/`, `.dual-graph*/` e arquivos do workspace.
 
 O endpoint público do jogo pode aparecer na documentação operacional; dados de

@@ -101,6 +101,8 @@ python windows-kit/aof7_installer.py --check-only `
 ## Distribuição
 
 O repositório versiona scripts, manifestos, hashes, testes, overrides e
-documentação. ZIPs, jars grandes, logs, bancos, mundo e perfis pessoais ficam
-fora da publicação. Mods referenciados podem ter licenças próprias; confira os
-termos de cada projeto antes de redistribuir.
+documentação. ZIPs de distribuição, jars grandes, logs, bancos, mundo e perfis
+pessoais ficam fora da publicação; resources ZIP necessários dentro de
+`windows-kit/overrides/` permanecem como assets do projeto. Mods referenciados
+podem ter licenças próprias; confira os termos de cada projeto antes de
+redistribuir.

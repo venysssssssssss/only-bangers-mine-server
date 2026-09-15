@@ -24,9 +24,9 @@ CLAUDE.md
 CODEX.md
 opencode.json
 .DS_Store
-mine server.zip
-mine server.zip:Zone.Identifier
-*.zip
+mine server*.zip
+mine server*.zip:Zone.Identifier
 *:Zone.Identifier
+dist/*.zip
 dist/OnlyBangers-Windows-Setup/
 windows-kit/client-mods/

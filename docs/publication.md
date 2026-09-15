@@ -31,6 +31,10 @@ Os arquivos locais não são apagados; são apenas excluídos do stage. GitHub
 rejeita blobs individuais acima de 100 MB, e esses artefatos não são necessários
 para revisar scripts, manifestos, hashes e documentação.
 
+ZIPs pequenos dentro de `windows-kit/overrides/` podem ser resources ou
+shaderpacks necessários ao kit legado; eles são assets do projeto, não pacotes
+de distribuição, e permanecem versionados quando já fazem parte do fluxo.
+
 ## GitHub CLI no host remoto
 
 O host `kali-server2` não possuía `gh`; a versão 2.46.0 foi instalada sem sudo

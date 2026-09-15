@@ -45,8 +45,8 @@ usuário para permitir publicação.
 - `docs/operations.md`, `docs/security.md`, `docs/publication.md` e setup
   Windows reconciliados com versões, rede e limites atuais.
 - Asset pequeno `docs/assets/server-icon.png` copiado do ícone existente do host.
-- Branch publicada em PR, quando autenticação remota estiver disponível; ZIPs,
-  jars grandes, estado, logs e bancos permanecem fora do commit.
+- Branch publicada em PR, quando autenticação remota estiver disponível; ZIPs de
+  distribuição, jars grandes, estado, logs e bancos permanecem fora do commit.
 
 ## Validação
 

@@ -16,7 +16,7 @@
 - Minecraft 1.20.1, Fabric Loader 0.19.5 e Java 21 são versões live documentadas.
 - Nenhum WebSocket será declarado como parte do servidor sem evidência.
 - README usa `server-icon.png` como ícone, nunca como foto física.
-- Não publicar credenciais, IDs, Tailscale, RCON, EasyAuth, logs privados, ZIPs ou jars grandes.
+- Não publicar credenciais, IDs, Tailscale, RCON, EasyAuth, logs privados, ZIPs de distribuição ou jars grandes.
 - Não adicionar dependências, CI ou runtime novo.
 
 ---
