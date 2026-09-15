@@ -1,7 +1,7 @@
 # OnlyBangers Minecraft Server
 
 Servidor Minecraft Fabric 1.20.1 mantido em Linux, com cliente Windows
-reprodutível, autenticação offline, túnel Playit e observabilidade via Spark.
+verificável, autenticação offline, túnel Playit e observabilidade via Spark.
 
 ![Ícone do servidor OnlyBangers](docs/assets/server-icon.png)
 

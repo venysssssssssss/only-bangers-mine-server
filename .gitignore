@@ -7,6 +7,12 @@ logs/
 __pycache__/
 *.py[cod]
 *.part
+*.jar
+*.log
+*.db
+world/
+EasyAuth/
+server.properties*
 .pytest_cache/
 .venv/
 .agents/
