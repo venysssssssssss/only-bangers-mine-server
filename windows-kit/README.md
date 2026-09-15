@@ -1,4 +1,8 @@
-# AOF7 2.5.3 — instalador Windows
+# AOF7 2.5.3 — instalador Windows legado
+
+> Este diretório contém o fluxo histórico AOF7. Para jogar no servidor
+> OnlyBangers atual, use [`docs/SETUP-WINDOWS-TLAUNCHER.md`](../docs/SETUP-WINDOWS-TLAUNCHER.md)
+> e `Install-OnlyBangers.ps1`.
 
 Este kit instala o cliente All of Fabric 7 2.5.3 para Minecraft 1.20.1 +
 Fabric Loader 0.16.0 no launcher oficial.

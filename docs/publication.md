@@ -1,46 +1,71 @@
 # Publicação
 
-Este projeto será publicado como o repositório público `only-bangers-mine-server`.
+## Repositório
+
+- Nome: `only-bangers-mine-server`
+- Owner: `venysssssssssss`
+- URL: <https://github.com/venysssssssssss/only-bangers-mine-server>
+- Remoto local: `origin`
+- Fluxo desta auditoria: branch `docs/live-server-audit` + PR para `main`
 
 ## Conteúdo versionado
 
-O repositório inclui o código do instalador, manifests, overrides KubeJS,
-testes, documentação e assets compatíveis com os limites do GitHub.
+Entram scripts, manifestos, hashes SHA-512, testes, overrides úteis,
+documentação e assets pequenos como `docs/assets/server-icon.png`.
+
+O kit cliente atual é descrito pelo manifesto e pelo script, mas os jars locais
+não entram no release público. O instalador AOF7 e seus testes permanecem para
+preservar o histórico técnico do downloader.
 
 ## Conteúdo excluído
 
-`mine server.zip` permanece no workspace, mas não entra no Git: o arquivo tem
-cerca de 618 MB e ultrapassa o limite de 100 MB por arquivo do GitHub. O
-arquivo auxiliar `mine server.zip:Zone.Identifier` também é específico do
-Windows e não pertence ao projeto.
+Ficam fora do Git regular:
 
-Também ficam fora segredos, logs, caches, arquivos temporários e partes
-incompletas de downloads, conforme `.gitignore`. Metadados locais de agentes
-(`.agents/`, `.codex/`, `.dual-graph/`, `.dual-graph-context/`) e instruções
-específicas deste workspace (`AGENTS.md`, `CODEX.md`) também não fazem parte
-do produto público. `opencode.json` também é configuração local do ambiente e
-fica fora do produto. Arquivos `.DS_Store` também são descartados por serem
-metadados do Finder, não conteúdo do pack.
+- ZIPs locais do servidor e variantes de skin;
+- `dist/OnlyBangers-Windows-Setup.zip` e sua pasta expandida;
+- `windows-kit/client-mods/` com jars do cliente;
+- logs, mundo, EasyAuth, backups, caches, `.part` e perfis locais;
+- tokens, senhas, chaves, IDs de host e dados Tailscale.
 
-## Auditoria antes de publicar
+Os arquivos locais não são apagados; são apenas excluídos do stage. GitHub
+rejeita blobs individuais acima de 100 MB, e esses artefatos não são necessários
+para revisar scripts, manifestos, hashes e documentação.
 
-Use estes comandos antes de cada publicação:
+ZIPs pequenos dentro de `windows-kit/overrides/` podem ser resources ou
+shaderpacks necessários ao kit legado; eles são assets do projeto, não pacotes
+de distribuição, e permanecem versionados quando já fazem parte do fluxo.
+
+## GitHub CLI no host remoto
+
+O host remoto não possuía `gh`; a versão 2.46.0 foi instalada no espaço do
+usuário, sem sudo. O login web precisa ser concluído no próprio host quando o
+acesso a `github.com` estiver disponível. O token local não é copiado nem
+gravado no repositório.
+
+## Auditoria antes de cada commit
 
 ```bash
 git status --short --ignored
-git diff --cached --stat
 git diff --cached --name-only
+git diff --cached --stat
 git diff --cached --check
 ```
 
-O conjunto a publicar deve conter apenas arquivos do projeto, documentação e
-assets versionáveis. Nunca adicione tokens, senhas, chaves privadas ou perfis
-locais do Minecraft Launcher.
+Use stage seletivo. Não use `git add -A` enquanto ZIPs/jars não rastreados
+estiverem presentes sem regras de exclusão. Revise arquivos novos procurando
+segredos antes do push.
 
-## Estado da publicação
+## Publicação via PR
 
-- Repositório: `only-bangers-mine-server`
-- Visibilidade: pública
-- Branch: `main`
-- URL: https://github.com/venysssssssssss/only-bangers-mine-server
-- Publicado via: `gh repo create ... --public --source=. --remote=origin --push`
+```bash
+gh auth status
+git remote -v
+git push -u origin docs/live-server-audit
+gh pr create --base main --head docs/live-server-audit \
+  --title "docs: document live OnlyBangers server" \
+  --body-file /tmp/onlybangers-pr.md
+```
+
+O corpo do PR deve listar snapshot SSH, topologia, mods, otimizações, testes,
+limites públicos e o achado systemd. Não registrar credenciais no arquivo
+temporário nem no repositório.

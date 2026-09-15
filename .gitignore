@@ -7,6 +7,12 @@ logs/
 __pycache__/
 *.py[cod]
 *.part
+*.jar
+*.log
+*.db
+world/
+EasyAuth/
+server.properties*
 .pytest_cache/
 .venv/
 .agents/
@@ -14,8 +20,17 @@ __pycache__/
 .dual-graph/
 .dual-graph-context/
 AGENTS.md
+CLAUDE.md
 CODEX.md
 opencode.json
 .DS_Store
-mine server.zip
-mine server.zip:Zone.Identifier
+mine server*.zip
+mine server*.zip:Zone.Identifier
+*:Zone.Identifier
+dist/*.zip
+dist/OnlyBangers-Windows-Setup/
+windows-kit/client-mods/
+.aof7-install-state.json
+*.aof7-backup
+launcher_profiles.json
+launcher_profiles.json.*

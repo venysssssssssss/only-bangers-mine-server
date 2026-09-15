@@ -1,0 +1,261 @@
+{
+  "minecraft": "1.20.1",
+  "fabric_loader": "0.19.5",
+  "mods": [
+    {
+      "id": "Botania-1.20.1-455-FABRIC",
+      "file": "Botania-1.20.1-455-FABRIC.jar",
+      "sha512": "11e585837124a287a5c70b36040f4916752f1c952f4b68c91405a80d170d131b4d0234b7b6125447704234f81f76bf9dd7f13f695ad6e6ac4b66e9fa80578a90"
+    },
+    {
+      "id": "Chunky-1.3.146",
+      "file": "Chunky-1.3.146.jar",
+      "sha512": "9dbb82993302a8dfbe6ce1f46a051d72b5ada924424f4e23674ce660d209257584159a33248fa9247793e9ba03d3a117299ce1ff6685f06a7fb87c96504459aa"
+    },
+    {
+      "id": "Clumps-fabric-1.20.1-12.0.0.4",
+      "file": "Clumps-fabric-1.20.1-12.0.0.4.jar",
+      "sha512": "2235d29b1239d5526035bffd547d35fe33b9e737d3e75cd341f6689d9cd834d0a7dc03ed80748772162cd9595ba08e7a0ab51221bc145a8fd979d596c3967544"
+    },
+    {
+      "id": "FarmersDelight-1.20.1-2.5.7+refabricated",
+      "file": "FarmersDelight-1.20.1-2.5.7+refabricated.jar",
+      "sha512": "f7197d9d5443626212c87ed1745cd3af14f549e62039bfd332d34cc0870f351afbc5ea5e856cac18831f572e006bb7a08457ff93346a29ac855baddee3b67ad0"
+    },
+    {
+      "id": "ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric",
+      "file": "ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar",
+      "sha512": "15144d6d7b74dfbe2eede6e3b0aa0c841670be1bd6121608bc28f3b1e46846ccd36b506060a081c988da96cf46fce8bf2e55601e3934b9a52d22dc2fa6cbfd32"
+    },
+    {
+      "id": "Hephaestus-1.20.1-3.6.4.305",
+      "file": "Hephaestus-1.20.1-3.6.4.305.jar",
+      "sha512": "2e6425380dd13279550fa47b021bda013517000e70e5e92437ccbbbd9e28897338b0740726b8c291866db754ea314a18561d9ccdc9639765d9768835249c6f7b"
+    },
+    {
+      "id": "IndustrialReborn-1.20.1-1.1",
+      "file": "IndustrialReborn-1.20.1-1.1.jar",
+      "sha512": "6fd8f30e0b94db1aa67e36b50a8501b212d74ed131addc23734b556649920d920dd097105adb61d56e096727db0d533ed9df4a12f3e649c8397286bb91162ced"
+    },
+    {
+      "id": "Jade-1.20-Fabric-11.13.3",
+      "file": "Jade-1.20-Fabric-11.13.3.jar",
+      "sha512": "50d3917fa89fa382ab972ea4029eb4a5a0a9d74dde1d1e38ab5aa898b953dd0b7ee62565fbffb9b990829f95b298a6ac5ff34ecc8eecb35082cca1f7e15ffbeb"
+    },
+    {
+      "id": "Ksyxis-1.4.3",
+      "file": "Ksyxis-1.4.3.jar",
+      "sha512": "55b1ec940910a6c36fa40595b0d7b8617e3a817c55ecb2d5c1ee54c026936d6f1a4bbe63228c60ebf75195bb14f3c9128c913ba949df2c5877b9b99d21bab9a4"
+    },
+    {
+      "id": "NaturesCompass-1.20.1-2.6.0-fabric",
+      "file": "NaturesCompass-1.20.1-2.6.0-fabric.jar",
+      "sha512": "d43c93dd476803bba76ab2efe16ff0df199c2dae425be513c0a35561c209bfac781062ee3f8cfab2a9987a6758aa04b5d7d2f9f2cb222aba70fceb59af786eb9"
+    },
+    {
+      "id": "Patchouli-1.20.1-85-FABRIC",
+      "file": "Patchouli-1.20.1-85-FABRIC.jar",
+      "sha512": "b287e86e71865d7bb0caa2b7722c8940f51e72fd2a534e22c22c04dc9536e53137bacaada24f3cfd8a5133d3135bc6b5b235d4a42fb7e84924ca560df00d5c1e"
+    },
+    {
+      "id": "RegionsUnexploredFabric-0.5.6+1.20.1",
+      "file": "RegionsUnexploredFabric-0.5.6+1.20.1.jar",
+      "sha512": "3ba4d1f6adc66d3b2a325d396b4829e45e54560b33900cba060bac99fb53e59588cd0ab5ecc05cb81d7eddeef4041fd772a9c12f786714b447890a2725d9d544"
+    },
+    {
+      "id": "TechReborn-5.8.15",
+      "file": "TechReborn-5.8.15.jar",
+      "sha512": "bc4feb57728ba2bb2332b91f907e7cdfd13d0eb6d1c19f38c51268ecf8bc1d5c8a8e552181d92bf8ef22f5e536d7a3d0575167c6e2536cac51bdb0597c1628a5"
+    },
+    {
+      "id": "TerraBlender-fabric-1.20.1-3.0.1.10",
+      "file": "TerraBlender-fabric-1.20.1-3.0.1.10.jar",
+      "sha512": "a2d5edbe9df43185e9c83ab426cbcda4b1d0537d9ede8be630d6d650e04d5decf574ef59cbc163913255b57784fa906d26557471fc698e0f27ceee2a1ec41ed9"
+    },
+    {
+      "id": "Terralith_1.20.x_v2.5.4",
+      "file": "Terralith_1.20.x_v2.5.4.jar",
+      "sha512": "885e171d8b34aae7e142f082d0364285ec5a8e8342f11c60d341f7a94083d5a42c4e30612fe4f9f64d57b484396a3dff3a224e2a2497d4ced8d22f2ad6cd561d"
+    },
+    {
+      "id": "YungsApi-1.20-Fabric-4.0.6",
+      "file": "YungsApi-1.20-Fabric-4.0.6.jar",
+      "sha512": "90fea70f21cd09bdeefe9cb6bd23677595b32156b1b8053611449504ba84a21ee1e13e5a620851299090ce989f41b97b9b4bdc98def1ccecb33115e19553c64e"
+    },
+    {
+      "id": "YungsBetterCaves-1.20.1-Fabric-2.0.7",
+      "file": "YungsBetterCaves-1.20.1-Fabric-2.0.7.jar",
+      "sha512": "16a91fe5b08af5b92c1fbd340e2a19a066ee699e3fc387228d3537ef191b28d12b8a4022acdaa7515e6cae154ef947a7ff8a3d1495584e7567f92b8fd8adaf1c"
+    },
+    {
+      "id": "YungsBetterNetherFortresses-1.20-Fabric-2.0.6",
+      "file": "YungsBetterNetherFortresses-1.20-Fabric-2.0.6.jar",
+      "sha512": "a752f0dea20fa86e6d3a4f87d180af706b2ad5e3d434185aaa624692fc55329a2e2e410e67f843ec982e7b90ae63565b4aed43adbee6c50ded403ef50d91d7fd"
+    },
+    {
+      "id": "adventurez-1.4.20",
+      "file": "adventurez-1.4.20.jar",
+      "sha512": "9d39505877fba9f1655ec5655715f5a579acabc525c0a25832942389ad5ecb3807e6ae59e43aca57e9897cf65a82f157d070df20a429df6f9f6e37b6459ba1c1"
+    },
+    {
+      "id": "amendments-1.20-2.2.6-fabric",
+      "file": "amendments-1.20-2.2.6-fabric.jar",
+      "sha512": "36f70d5812d878c7857d648de404f09493f7596a1b2f532f3b04166f607aea01723ccb268729671411c6b02eb86773cb1400c603d67f1ae1cb02444b1e607041"
+    },
+    {
+      "id": "architectury-9.2.14-fabric",
+      "file": "architectury-9.2.14-fabric.jar",
+      "sha512": "4cb8f009fd522d68a795d2cf5a657bdbe248b32ba7c33cd968f5ab521e9d60e198f8a3f6c50e7d960a2b8f50375116be0db1fd44b5710ea758697d8ea70d15de"
+    },
+    {
+      "id": "balm-fabric-1.20.1-7.3.43",
+      "file": "balm-fabric-1.20.1-7.3.43.jar",
+      "sha512": "5d38760acaac76952c97811d8b25a096304dd7f81d9f7c8fb25615596b48afd5571f1a65c6e734ae7f56c67412b11675517e5a3457ecff0468d355a32aa0c053"
+    },
+    {
+      "id": "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18",
+      "file": "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
+      "sha512": "5068a570cde47f105ec17bde14d0004c5f5d3f73b89d8e23a8ac5955a35f4a0dc59ff1d9e0626bfb29e04a7329dc0e9e089f41d637aff6843a6cd43d0573ece9"
+    },
+    {
+      "id": "cardinal-components-api-5.2.3",
+      "file": "cardinal-components-api-5.2.3.jar",
+      "sha512": "f20484d5bc780bee9b388ff6075e7c3bd130c7f8cae75a425bfd1fb68d03ca19288c09b0729992987fd32f3a2433b49c25162e086de82abd8d06ee45e4e3c917"
+    },
+    {
+      "id": "cloth-config-11.1.136-fabric",
+      "file": "cloth-config-11.1.136-fabric.jar",
+      "sha512": "2da85c071c854223cc30c8e46794391b77e53f28ecdbbde59dc83b3dbbdfc74be9e68da9ed464e7f98b4361033899ba4f681ebff1f35edc2c60e599a59796f1c"
+    },
+    {
+      "id": "create-fabric-6.0.8.1+build.1744-mc1.20.1",
+      "file": "create-fabric-6.0.8.1+build.1744-mc1.20.1.jar",
+      "sha512": "6edaddb93bc87bf8204376d3ceddd3e3dfec1d716556a5925802f2ade59ce5a660ded50088fa94188842ff83fc29445363dfa5d423e425b1574092833b6fa896"
+    },
+    {
+      "id": "emi-1.1.24+1.20.1+fabric",
+      "file": "emi-1.1.24+1.20.1+fabric.jar",
+      "sha512": "2e1fbbbb961a90f525f6938361288505d5928b9a54e7e932afa7de63aeb1962f6a04b77540729922ee48a425d01bbe8c00d1a18ce6cd766dfa513b6ed0cf1f1b"
+    },
+    {
+      "id": "fabric-api-0.92.12+1.20.1",
+      "file": "fabric-api-0.92.12+1.20.1.jar",
+      "sha512": "de9da2344043b3e9ef9fb7dbfff5f2577b06000c4f73f2a37959a80123141169084cece19133bd299b45feaaa4648bdaca2ea085684888cc8c55cc9134a477ca"
+    },
+    {
+      "id": "fabric-carpet-1.20-1.4.112+v230608",
+      "file": "fabric-carpet-1.20-1.4.112+v230608.jar",
+      "sha512": "bf9060e6b1d30d676d9efd30369ccb5baef164fc2d87aad7c7a19d2d9265b5d1d328428a308bdd15960a26bfe46dcd823a236c39f4e26474847354337b043c51"
+    },
+    {
+      "id": "ferritecore-6.0.1-fabric",
+      "file": "ferritecore-6.0.1-fabric.jar",
+      "sha512": "9b7dc686bfa7937815d88c7bbc6908857cd6646b05e7a96ddbdcada328a385bd4ba056532cd1d7df9d2d7f4265fd48bd49ff683f217f6d4e817177b87f6bc457"
+    },
+    {
+      "id": "ironchests-5.0.2-fabric",
+      "file": "ironchests-5.0.2-fabric.jar",
+      "sha512": "c4eceb44a99dbd9a4e3ce744bce6fe2f5a9d17ef36d0cbd012cd4344999f8cac9d16b964b966969175dea5da947071389616968caa91a9fcfbe360c36c6e0ac8"
+    },
+    {
+      "id": "krypton-0.2.3",
+      "file": "krypton-0.2.3.jar",
+      "sha512": "92b73a70737cfc1daebca211bd1525de7684b554be392714ee29cbd558f2a27a8bdda22accbe9176d6e531d74f9bf77798c28c3e8559c970f607422b6038bc9e"
+    },
+    {
+      "id": "lazydfu-0.1.3",
+      "file": "lazydfu-0.1.3.jar",
+      "sha512": "dc3766352c645f6da92b13000dffa80584ee58093c925c2154eb3c125a2b2f9a3af298202e2658b039c6ee41e81ca9a2e9d4b942561f7085239dd4421e0cce0a"
+    },
+    {
+      "id": "letsdo-vinery-fabric-1.4.41",
+      "file": "letsdo-vinery-fabric-1.4.41.jar",
+      "sha512": "b2af162ea4f41aefbdeed997777ac3080b43ae76b847344a4117ae69a0de579b3157ab0c3ccbdac89964d87f596aee3b79426ea2a89cad08a82a676f7fd68808"
+    },
+    {
+      "id": "lithium-fabric-mc1.20.1-0.11.4",
+      "file": "lithium-fabric-mc1.20.1-0.11.4.jar",
+      "sha512": "31938b7e849609892ffa1710e41f2e163d11876f824452540658c4b53cd13c666dbdad8d200989461932bd9952814c5943e64252530c72bdd5d8641775151500"
+    },
+    {
+      "id": "lodestone-1.20.1-1.6.2.3f-fabric",
+      "file": "lodestone-1.20.1-1.6.2.3f-fabric.jar",
+      "sha512": "55bd6e3bfe397a1ab32b8d8418192bab206f8d5ac94d1f957cb76697b4d977e8928bd6eefe1f0933420baa25f40653e48995e3b8cf273dda4d8c262c75385f5e"
+    },
+    {
+      "id": "malum-1.20.1-1.6.3.0b-fabric",
+      "file": "malum-1.20.1-1.6.3.0b-fabric.jar",
+      "sha512": "04ad8da757087f0b94033f6d408aa511c001ddc11dc06f40303f54a3e9800f8c03efdb43ae59c9106fd25ff04288854b2e86286c8e933bc2ea0426ac42c79598"
+    },
+    {
+      "id": "memoryleakfix-fabric-1.17+-1.1.5",
+      "file": "memoryleakfix-fabric-1.17+-1.1.5.jar",
+      "sha512": "a7bf7429340d076f4b30602bc714280c3f5cb8e814e76e89296c8155e3355b33304a148e9218378a3383127e95b7ba47402506c687f1d58609704fe8cc60ab93"
+    },
+    {
+      "id": "modernfix-fabric-5.25.2+mc1.20.1",
+      "file": "modernfix-fabric-5.25.2+mc1.20.1.jar",
+      "sha512": "878e39d182767ffd08ad6a3539fae780739129db133abe02b9b73dc3df6e1ac9ddbe509620356b0aae5e7bfbed535d0e18741703334317a16fefef820269da2d"
+    },
+    {
+      "id": "moonlight-1.20-2.16.35-fabric",
+      "file": "moonlight-1.20-2.16.35-fabric.jar",
+      "sha512": "22c66d6898a10331e1da8901dbbf8f5b59f29a27676984e3f55e28debf888551f41441b9c229ae2b3ec66a8bc5acc42f7ccfb4e5e72381989b2dd04804d81017"
+    },
+    {
+      "id": "moredelight-26.05.07-1.20-fabric",
+      "file": "moredelight-26.05.07-1.20-fabric.jar",
+      "sha512": "8886e2dd69251a2eabee6fddf56c5216d551c3a0a281f22bf6580d02015f11dc5725b33509ec80a4c359e6ca69ac6d7dfbeec7e478384fd7e155371ec0100c0f"
+    },
+    {
+      "id": "porting_lib-2.3.15+1.20.1",
+      "file": "porting_lib-2.3.15+1.20.1.jar",
+      "sha512": "8af551441b7b8e56bc2e2cee23928de1fecd2dbeb6e082809983fa47cb1a9f34dfa4b13f9105d1f65e2a0543f50b0f3e37085fd391de89db36699d590999d156"
+    },
+    {
+      "id": "servercore-fabric-1.5.2+1.20.1",
+      "file": "servercore-fabric-1.5.2+1.20.1.jar",
+      "sha512": "ba0166167615d32503b39c5d0069278ce69b611354f1f73a9fc8a5f393f2df5f22cba9e9e228d9f154ac6feaea20155251bb2f73dd5ffec5bbc5fbe997842e30"
+    },
+    {
+      "id": "sophisticatedbackpacks-1.20.1-3.23.4.5.110",
+      "file": "sophisticatedbackpacks-1.20.1-3.23.4.5.110.jar",
+      "sha512": "651a6121533e5693c26bde85141339cb89b5cfee5a750d67cbdad12a97a51ec8a0a3b3b59845afe9013b477fce9570f80ae0047e1c7054f458bc9c1b93ef748c"
+    },
+    {
+      "id": "sophisticatedcore-1.20.1-1.2.7.15.166 (1)",
+      "file": "sophisticatedcore-1.20.1-1.2.7.15.166 (1).jar",
+      "sha512": "892dda2bfa2a49ed66e869877fc6309cfc3af11fe61859c3b1be341baf689a693fda30902dec5c9ec6f737fd8fe451615ceb3d1c31c51e40c38e68b59dfcf134"
+    },
+    {
+      "id": "spark-1.10.53-fabric",
+      "file": "spark-1.10.53-fabric.jar",
+      "sha512": "ce6e8f7071bb37369ad3e90d844926b424e82d0fe0ffd0db7058abddc9cfcdd594e145c9395677ad70ec532f3da0b23b6862d1f1c20f7600263c215abb4fcea7"
+    },
+    {
+      "id": "supplementaries-1.20-3.1.43-fabric",
+      "file": "supplementaries-1.20-3.1.43-fabric.jar",
+      "sha512": "141b8c1358083b3804f4cd43c825050a32f0d96fd1502d6f880cf4f85dc8a79d781ab521dd30154d2ea4d7cae30c9e781ecd0b9138295fb2ca2513b667cf36de"
+    },
+    {
+      "id": "trinkets-3.7.2",
+      "file": "trinkets-3.7.2.jar",
+      "sha512": "bedf97c87c5e556416410267108ad358b32806448be24ef8ae1a79ac63b78b48b9c851c00c845b8aedfc7805601385420716b9e65326fdab21340e8ba3cc4274"
+    },
+    {
+      "id": "vmp-fabric-mc1.20.1-0.2.0+beta.7.102-all",
+      "file": "vmp-fabric-mc1.20.1-0.2.0+beta.7.102-all.jar",
+      "sha512": "38ba14d870ddbcef233c9baa399005aaccde95d7b77175aa3a795eb9fed1086492b4ac5c6bbc05909dd76dce1b19b5c26613585161c2f3d20f2494beb8b23fe4"
+    },
+    {
+      "id": "waystones-fabric-1.20.1-14.1.21",
+      "file": "waystones-fabric-1.20.1-14.1.21.jar",
+      "sha512": "485998d08f6e3aa0b8763e2d2941b9e14472fd1588b3b6cdf345916f3d4d1df2042567108cf52d44264fa813f0c202e63d44aa861551774192cf4b28234cfa4a"
+    },
+    {
+      "id": "yet_another_config_lib_v3-3.6.6+1.20.1-fabric",
+      "file": "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
+      "sha512": "20f282b3cdaec7c83a96840edb756336677c5816ed943145022f1ce1eafac0c9aa7c621939e15abe6f4309626738bc56d3d1b8434f5175d22e7409108630b02b"
+    }
+  ]
+}

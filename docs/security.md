@@ -2,64 +2,68 @@
 
 ## Modelo de ameaça
 
-O instalador recebe um manifest local e bytes de servidores externos. O risco
-principal é transformar uma entrada ou download incorreto em arquivos dentro da
-instância do Minecraft, ou publicar dados privados junto do projeto.
+Há duas superfícies: cliente Windows recebe jars de manifestos; servidor Linux
+aceita conexões públicas e contas offline. O risco principal é misturar estado
+privado com release público, aceitar payload incorreto ou tratar autenticação
+offline como identidade Mojang.
 
-### Entradas consideradas não confiáveis
+## Controles do servidor
 
-- URLs e respostas HTTP(S) dos hosts de download.
-- Caminhos de arquivos declarados no manifest.
-- Arquivos parciais deixados por uma execução interrompida.
-- Alterações locais no manifest antes de uma release.
-- Arquivos adicionados ao stage por engano antes de um push público.
-
-## Controles existentes
-
-| Risco | Controle |
+| Risco | Controle observado |
 | --- | --- |
-| Caminho escapando da instância | `safe_join` rejeita path traversal. |
-| Transporte inseguro | O manifest real exige URLs HTTPS. |
-| Credencial vazando na URL | URLs com usuário ou senha são rejeitadas. |
-| Download incompleto | O tamanho recebido é conferido quando a resposta informa `Content-Length`; o SHA-256 recebido é registrado no estado. |
-| Interrupção no meio da gravação | Download ocorre em `.part` e só depois é promovido. |
-| Perda de arquivo válido | Falha de substituição preserva o destino anterior. |
-| Perda de perfil do Launcher | Mesclagem cria `launcher_profiles.json.aof7-backup`. |
-| Diagnóstico indisponível | Bootstrap grava transcript em `logs\\install.log`. |
+| RCON exposto | Listener limitado a `127.0.0.1:25575`. |
+| Processo privilegiado | systemd usa usuário dedicado, `NoNewPrivileges` e `PrivateTmp`. |
+| Escrita ampla | `UMask=0077`; arquivos de estado ficam privados. |
+| Acesso público | Jogo passa por Playit/IPv6; administração não usa a porta do jogo. |
+| Contas offline | EasyAuth exige `/register` e `/login`; senha deve ser exclusiva. |
+| Diagnóstico | Spark e health log permitem medir TPS sem expor banco. |
 
-Esses controles protegem o fluxo de instalação; eles não transformam hosts
-externos em fontes automaticamente confiáveis. O manifest atual não contém
-hashes esperados por arquivo, então o digest salvo no estado é auditoria local,
-não uma prova independente de autenticidade. Uma mudança de URL ou hash deve
-ser revisada como mudança de supply chain.
+`online-mode=false` é escolha operacional para contas offline, não mecanismo de
+identidade forte. EasyAuth precisa permanecer server-only. Nunca publique
+`EasyAuth/easyauth.db`, senhas, `server.properties` ou comandos RCON.
 
-## Dados que nunca devem ser publicados
+## Controles do kit Windows
 
-- tokens, senhas, cookies ou chaves de API;
-- chaves privadas, certificados pessoais e credenciais de cloud;
-- `launcher_profiles.json` de uma máquina real;
-- logs que contenham nomes de usuário, caminhos pessoais ou tokens;
-- caches, arquivos `.part` e artefatos temporários;
-- `mine server.zip`, que é grande demais para o GitHub e pode conter estado
-  local fora do escopo do kit;
-- metadados do workspace (`.agents/`, `.codex/`, `.dual-graph*/`).
+- Manifesto cliente fixa Minecraft 1.20.1 e Fabric Loader 0.19.5.
+- Script exige Java 21 x64 e valida SHA-512 de cada um dos 51 jars.
+- Manifesto não inclui JEI, EasyAuth ou SkinRestorer; o script rejeita JEI e EasyAuth.
+- O instalador legado rejeita URLs não HTTPS, credenciais em URL e path
+  traversal; baixa em `.part` e promove arquivo completo atomicamente.
+- Perfil do Launcher recebe backup antes de mesclagem.
+- Falha de download não substitui um destino válido anterior.
 
-## Checklist antes de uma release
+SHA-512 do manifest cliente confirma o arquivo esperado no kit, mas não assina
+o manifest. SHA-256 calculado pelo instalador legado registra bytes recebidos;
+sem digest esperado externo, não é prova independente de supply chain.
 
-1. Leia `git status --short --ignored`.
-2. Revise `git diff --cached --name-only`.
-3. Procure manualmente por segredos em arquivos novos e alterados.
-4. Confirme URLs HTTPS e os metadados disponíveis no manifest.
-5. Rode a suíte de testes e o self-test do instalador.
-6. Confirme que o arquivo grande e os logs continuam ignorados.
+## O que nunca publicar
 
-Se um segredo for publicado, revogue-o e faça a rotação imediatamente. Remover
-o texto de um commit posterior não invalida o segredo já exposto.
+- senhas, tokens, cookies, chaves privadas e credenciais de cloud;
+- `EasyAuth/easyauth.db`, perfis locais e RCON;
+- `world/`, `server.properties`, backups e arquivos `.part`;
+- logs com nomes, UUIDs, caminhos pessoais ou mensagens privadas;
+- IPs Tailscale, machine ID, boot ID e configuração interna do host;
+- ZIPs de distribuição e diretórios com jars grandes ou estado local;
+- metadados `.agents/`, `.codex/`, `.dual-graph*/` e arquivos do workspace.
 
-## Limites conhecidos
+O endpoint público do jogo pode aparecer na documentação operacional; dados de
+administração permanecem privados.
 
-- O projeto não assina os manifests nem verifica assinatura de metadata externa.
-- O SHA-256 salvo no estado depende dos bytes recebidos; o manifest ainda não
-  fornece um hash esperado para comparação independente.
-- O transcript local pode conter detalhes úteis para diagnóstico; por isso ele
-  é ignorado e não deve ser anexado publicamente sem revisão.
+## Revisão antes do push
+
+```bash
+git status --short --ignored
+git diff --cached --name-only
+git diff --cached --stat
+git diff --cached --check
+```
+
+Revise arquivos novos visualmente. Se um segredo for publicado, revogue-o e
+faça rotação imediata; apagar em commit posterior não remove o histórico.
+
+## Achado operacional
+
+O host tem fragmento systemd base com referência 1.21.1, drop-in ativo 1.20.1
+e alerta de unidade carregada defasada. Isso é risco de manutenção e deve ser
+reconciliado em janela controlada; esta auditoria não executou `daemon-reload`
+nem alterou serviço.
